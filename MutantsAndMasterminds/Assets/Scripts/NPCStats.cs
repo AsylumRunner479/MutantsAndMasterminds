@@ -23,43 +23,43 @@ public class NPCStats : MonoBehaviour
     private string[] subArchetypes = new string[] { };
     private string[] lastNames = new string[] { "Isayev", "Tikhonov", "Chapayev", "Petka", "Anka", "Furmanov", "Budyonny", "Caesar", "Rzhevsky", "Tolstoy", "Bezukhov", "Blonsky", "Romanov", "Pavlovna", "Rostova", "Bolkonsky", "Kuragin", "Vidor", "Bondarchuk", "Levi", "Livinov", "Solomin", "Aksyonov", "Kalashnikov", "Gorbachev", "Smirnov", "Chernov", "Putin", "Brezhnev", "Pushkin", "Lipatov", "Khruschev", "Yeltsin", "Medvedev", "Anatolievych", "Vladimirovich" };
     private int skillCount;
-    private int acrobatics,
-        athletics,
-        closeCombatGadgets,
-        closeCombatUnarmed,
-        closeCombatWeapon,
-        deception,
-        expertiseBusiness,
-        expertiseBiology,
-        expertiseCurrentEvents,
-        expertiseElements,
-        expertiseHistory,
-        expertiseScience,
-        expertiseMagic,
-        expertiseMilitary,
-        expertiseMythology,
-        expertiseRepair,
-        expertiseStreetwise,
-        expertisePopCulture,
-        expertisePhilosophy,
-        expertiseTactics,
-        expertiseWeapons,
-        insight,
-        intimidation,
-        investigation,
-        perception,
-        persuasion,
-        rangedCombatElement,
-        rangedCombatEnergyControl,
-        rangedCombatGadgets,
-        rangedCombatThrowing,
-        rangedCombatWeapon,
-        sleightOfHand,
-        stealth,
-        technology,
-        treatment,
-        vehicles;
-    
+    private int acrobatics = 0,
+        athletics = 0,
+        closeCombatGadgets = 0,
+        closeCombatUnarmed = 0,
+        closeCombatWeapon = 0,
+        deception = 0,
+        expertiseBusiness = 0,
+        expertiseBiology = 0,
+        expertiseCurrentEvents = 0,
+        expertiseElements = 0,
+        expertiseHistory = 0,
+        expertiseScience = 0,
+        expertiseMagic = 0,
+        expertiseMilitary = 0,
+        expertiseMythology = 0,
+        expertiseRepair = 0,
+        expertiseStreetwise = 0,
+        expertisePopCulture = 0,
+        expertisePhilosophy = 0,
+        expertiseTactics = 0,
+        expertiseWeapons = 0,
+        insight = 0,
+        intimidation = 0,
+        investigation = 0,
+        perception = 0,
+        persuasion = 0,
+        rangedCombatElement = 0,
+        rangedCombatEnergyControl = 0,
+        rangedCombatGadgets = 0,
+        rangedCombatThrowing = 0,
+        rangedCombatWeapon = 0,
+        sleightOfHand = 0,
+        stealth = 0,
+        technology = 0,
+        treatment = 0,
+        vehicles = 0;
+    private GameObject skillName, skillNum;
     
     private string[] advantages = new string[] { "default" };
     public string GetRandomName()
@@ -73,7 +73,111 @@ public class NPCStats : MonoBehaviour
         //Debug.Log(GetRandomName());
        
     }
-    
+    public void ExpertiseChoose(int boost)
+    {
+        random.Random15();
+        if (random.number0 == 0)
+        {
+            expertiseBiology += boost;
+        }
+        else if (random.number0 == 1)
+        {
+            expertiseBusiness += boost;
+        }
+        else if (random.number0 == 2)
+        {
+            expertiseCurrentEvents += boost;
+        }
+        else if (random.number0 == 3)
+        {
+            expertiseElements += boost;
+        }
+        else if (random.number0 == 4)
+        {
+            expertiseHistory += boost;
+        }
+        else if (random.number0 == 5)
+        {
+            expertiseScience += boost;
+        }
+        else if (random.number0 == 6)
+        {
+            expertiseMagic += boost;
+        }
+        else if (random.number0 == 7)
+        {
+            expertiseMilitary += boost;
+        }
+        else if (random.number0 == 8)
+        {
+            expertiseMythology += boost;
+        }
+        else if (random.number0 == 9)
+        {
+            expertisePhilosophy += boost;
+        }
+        else if (random.number0 == 10)
+        {
+            expertisePopCulture += boost;
+        }
+        else if (random.number0 == 11)
+        {
+            expertiseRepair += boost;
+        }
+        else if (random.number0 == 12)
+        {
+            expertiseStreetwise += boost;
+        }
+        else if (random.number0 == 13)
+        {
+            expertiseTactics += boost;
+        }
+        else
+        {
+            expertiseWeapons += boost;
+        }
+    }
+    public void CloseCombatChoose(int boost)
+    {
+        random.Random3();
+        if (random.number0 == 0)
+        {
+           closeCombatGadgets += boost;
+        }
+        else if (random.number0 == 1)
+        {
+            closeCombatUnarmed += boost;
+        }
+        
+        else
+        {
+            closeCombatWeapon += boost;
+        }
+    }
+    public void RangedCombatChoose(int boost)
+    {
+        random.Random5();
+        if (random.number0 == 0)
+        {
+            rangedCombatElement += boost;
+        }
+        else if (random.number0 == 1)
+        {
+            rangedCombatEnergyControl += boost;
+        }
+        else if (random.number0 == 2)
+        {
+            rangedCombatGadgets += boost;
+        }
+        else if (random.number0 == 3)
+        {
+            rangedCombatWeapon += boost;
+        }
+        else
+        {
+            rangedCombatThrowing += boost;
+        }
+    }
     public void CreateNPC()
     {
        
@@ -1811,7 +1915,8 @@ public class NPCStats : MonoBehaviour
                 else if (random.number0 == 1)
                 {
                     string1 = "Broad Training";
-                    //expertise(choose 1) += 4
+                    ExpertiseChoose(4);
+                    
                     insight += 2;
                     perception += 2;
                     persuasion += 4;
@@ -1820,7 +1925,7 @@ public class NPCStats : MonoBehaviour
                 else if (random.number0 == 2)
                 {
                     string1 = "Charismatic";
-                    //expertise(choose 1) += 4
+                    ExpertiseChoose(4);
                     insight += 4;
                     persuasion += 4;
                     perception += 4;
@@ -1829,8 +1934,8 @@ public class NPCStats : MonoBehaviour
                 else
                 {
                     string1 = "Learned";
-                    //expertise(choose 1) += 6
-                    
+                    ExpertiseChoose(6);
+
                     technology += 4;
                     perception += 4;
                 }
@@ -1844,7 +1949,7 @@ public class NPCStats : MonoBehaviour
                 else if (random.number1 == 1)
                 {
                     string2 = "Broad Training";
-                    //expertise(choose 1) += 4
+                    ExpertiseChoose(4);
                     insight += 2;
                     perception += 2;
                     persuasion += 4;
@@ -1853,7 +1958,7 @@ public class NPCStats : MonoBehaviour
                 else if (random.number1 == 2)
                 {
                     string2 = "Charismatic";
-                    //expertise(choose 1) += 4
+                    ExpertiseChoose(4);
                     insight += 4;
                     persuasion += 4;
                     perception += 4;
@@ -1862,7 +1967,7 @@ public class NPCStats : MonoBehaviour
                 else
                 {
                     string2 = "Learned";
-                    //expertise(choose 1) += 6
+                    ExpertiseChoose(6);
 
                     technology += 4;
                     perception += 4;
@@ -2030,7 +2135,7 @@ public class NPCStats : MonoBehaviour
                 else
                 {
                     string2 = "Sharp Mind";
-                    //expertise(choose 1) += 4;
+                    ExpertiseChoose(4);
                     insight += 4;
                     perception += 4;
                 }
@@ -2065,7 +2170,7 @@ public class NPCStats : MonoBehaviour
                 else
                 {
                     string3 = "Sharp Mind";
-                    //expertise(choose 1) += 4;
+                    ExpertiseChoose(4);
                     insight += 4;
                     perception += 4;
                 }
@@ -2162,7 +2267,7 @@ public class NPCStats : MonoBehaviour
                 else if (random.number0 == 1)
                 {
                     string1 = "Dabbler";
-                    //expertise(choose 1) += 4;
+                    ExpertiseChoose(4);
                     insight += 4;
                     perception += 4;
                 }
@@ -2183,7 +2288,7 @@ public class NPCStats : MonoBehaviour
                 else
                 {
                     string1 = "Student";
-                    //expertise(choose 1) += 6;
+                    ExpertiseChoose(6);
                     insight += 2;
                     perception += 4;
                 }
@@ -2197,7 +2302,7 @@ public class NPCStats : MonoBehaviour
                 else if (random.number1 == 1)
                 {
                     string2 = "Dabbler";
-                    //expertise(choose 1) += 4;
+                    ExpertiseChoose(4);
                     insight += 4;
                     perception += 4;
                 }
@@ -2218,7 +2323,7 @@ public class NPCStats : MonoBehaviour
                 else
                 {
                     string2 = "Student";
-                    //expertise(choose 1) += 6;
+                    ExpertiseChoose(6);
                     insight += 2;
                     perception += 4;
                 }
@@ -2284,7 +2389,7 @@ public class NPCStats : MonoBehaviour
                 {
                     string1 = "Adventurer";
                     athletics += 4;
-                    //expertise(choose 1) += 4;
+                    ExpertiseChoose(4);
                     perception += 4;
                 }
                 else if (random.number0 == 1)
@@ -2311,8 +2416,8 @@ public class NPCStats : MonoBehaviour
                 else
                 {
                     string1 = "Researcher";
-                    //expertise(choose 1) += 6;
-                    
+                    ExpertiseChoose(6);
+
                     technology += 6;
                 }
                 random.Random5();
@@ -2320,7 +2425,7 @@ public class NPCStats : MonoBehaviour
                 {
                     string2 = "Adventurer";
                     athletics += 4;
-                    //expertise(choose 1) += 4;
+                    ExpertiseChoose(4);
                     perception += 4;
                 }
                 else if (random.number0 == 1)
@@ -2347,7 +2452,7 @@ public class NPCStats : MonoBehaviour
                 else
                 {
                     string2 = "Researcher";
-                    //expertise(choose 1) += 6;
+                    ExpertiseChoose(6);
 
                     technology += 6;
                 }
@@ -2437,7 +2542,7 @@ public class NPCStats : MonoBehaviour
                 else if (random.number0 == 3)
                 {
                     string1 = "Scientist";
-                    //expertise(choose 1) += 6;
+                    ExpertiseChoose(6);
                     technology += 6;
                     vehicles += 4;
                 }
@@ -2473,7 +2578,7 @@ public class NPCStats : MonoBehaviour
                 else if (random.number0 == 3)
                 {
                     string2 = "Scientist";
-                    //expertise(choose 1) += 6;
+                    ExpertiseChoose(6);
                     technology += 6;
                     vehicles += 4;
                 }
@@ -2631,7 +2736,7 @@ public class NPCStats : MonoBehaviour
                 else if (random.number0 == 2)
                 {
                     string1 = "Refined";
-                    //expertise(choose 1) += 4
+                    ExpertiseChoose(4);
                     insight += 4;
                     persuasion += 10;
                     perception += 6;
@@ -2780,7 +2885,7 @@ public class NPCStats : MonoBehaviour
                 else
                 {
                     string2 = "Mutation";
-                    //expertise(choose 1) += 8;
+                    ExpertiseChoose(8);
                     investigation += 6;
                     technology += 6;
                 }
@@ -3160,17 +3265,17 @@ public class NPCStats : MonoBehaviour
                 }
                 acrobatics += 4;
                 athletics += 4;
-                //expertise(choose 1) += 6
+                ExpertiseChoose(6);
                 random.Random2();
                 if (random.number0 == 0)
                 {
                     closeCombatWeapon += 6;
                     closeCombatUnarmed += 4;
-                    //ranged combat(chooseone) += 4
+                    ExpertiseChoose(4);
                 }
                 else
                 {
-                    //closecombat(choose1) += 6
+                    ExpertiseChoose(6);
                     rangedCombatWeapon += 8;
                 }
                 random.Random4();
@@ -3403,8 +3508,12 @@ public class NPCStats : MonoBehaviour
             {
                 if (acrobatics > 0)
                 {
+
                     acrobatics += Agility;
-                    skillCount += 1;
+                    skillName.GetComponent<Text>().text = "acrobatics";
+                    skillName.GetComponent<Text>().text = acrobatics.ToString();
+                    Instantiate(skillName);
+                    Instantiate(skillNum);
                 }
                 if (athletics > 0)
                 {

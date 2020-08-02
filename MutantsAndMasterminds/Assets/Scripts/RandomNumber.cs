@@ -119,6 +119,11 @@ public class RandomNumber : MonoBehaviour
         number0 = Random.Range(0, 6);
 
     }
+    public void Random15()
+    {
+        number0 = Random.Range(0, 14);
+
+    }
     public void Random20()
     {
         number0 = Random.Range(1, 20);

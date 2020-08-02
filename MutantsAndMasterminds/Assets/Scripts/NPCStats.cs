@@ -11,11 +11,12 @@ public class NPCStats : MonoBehaviour
     public Text Name, displayname, background0, background1;
     public string[] Archetype, displayArchetype;
     public string[] SubArchetype, displaySubArchetype;
-    public Text Background, displayBackground;
+    public Text Background, displayBackground, displayBackground2;
     public GameObject StatDisplay, NameList;
     public Text advantage0, advantage1, advantage2, advantage3;
     private string string1, string0, string2, string3, string4, string5;
     private string[] adv0, adv1, adv2, adv3;
+    private string Adv0, Adv1, Adv2, Adv3;
     public GameObject self;
     private string[] names = new string[] { "Albert", "Bogdan", "Dmitry", "Eduard", "Fedir", "German", "Igor", "Julij", "Konstantin", "Lavrentii", "Maxim", "Naum", "Osip", "Peter", "Roman", "Tit", "Vlad", "Yuri", "Vyacheslav", "Goga", "Alexei", "Viktor", "Misha", "Innokentiy", "Stefan", "Stanislav", "Foma", "Ruslan", "Taras", "Mitrofan", "Erik", "Spartak", "Modest", "Garry", "Nikita", "Boris", "Dobrushin", "Trofim", "Anton", "Mikhail", "Abram", "Gedeon", "Dorofey", "Savin", "Isodor", "Leonid", "Gleb", "Valentin", "David", "Daniil", "Ippolit", "Kirill", "Lazar", "Filipp", "Marlen", "Nestor", "Robert", "Arkady", "Pasha", "Valeriy", "Rolan", "Makariy", "Yulian", "Gennady", "Sergei", "Fanasiy", "Khan", "Semyon", "Yakov", "Rurik", "Faddei", "Yefim", "Nikolay", "Sasha", "Vladimir", "Alexander", "Stas", "Ipatiy", "Kolmogorov", "Vitaliy", "Vladislav", "Artyom", "Yana", "Olga", "Fedor", "Vasily", "Ivanovich", "Leo", "Pierre", "Anna", "Natasha", "Andrei" };
     private string[] archetypes = new string[] { "Battlesuit", "Construct", "Crime Fighter", "Elemental", "Energy Controller", "Gadgeteer", "Martial Artist", "Mimic", "Mystic", "Paragon", "Powerhouse", "Psychic", "Shapeshifter", "Speedster", "Summoner", "Supernatural Creature", "Totem", "Warrior", "Weapon Master", "Weather Controller" };
@@ -26,8 +27,10 @@ public class NPCStats : MonoBehaviour
         athletics,
         closeCombatGadgets,
         closeCombatUnarmed,
+        closeCombatWeapon,
         deception,
         expertiseBusiness,
+        expertiseBiology,
         expertiseCurrentEvents,
         expertiseElements,
         expertiseHistory,
@@ -40,6 +43,7 @@ public class NPCStats : MonoBehaviour
         expertisePopCulture,
         expertisePhilosophy,
         expertiseTactics,
+        expertiseWeapons,
         insight,
         intimidation,
         investigation,
@@ -49,6 +53,7 @@ public class NPCStats : MonoBehaviour
         rangedCombatEnergyControl,
         rangedCombatGadgets,
         rangedCombatThrowing,
+        rangedCombatWeapon,
         sleightOfHand,
         stealth,
         technology,
@@ -3153,43 +3158,117 @@ public class NPCStats : MonoBehaviour
                     adv3 = new string[] { "Daze(Deception)", "Taunt" };
 
                 }
-                random.Random5();
+                acrobatics += 4;
+                athletics += 4;
+                //expertise(choose 1) += 6
+                random.Random2();
                 if (random.number0 == 0)
                 {
-                    string2 = "Athlete";
-                    rangedCombatThrowing += 4;
-                    athletics += 4;
-                    perception += 4;
-                }
-                else if (random.number0 == 1)
-                {
-                    string2 = "Ex-Military";
-                    rangedCombatThrowing += 4;
-                    expertiseMilitary += 4;
-                    perception += 4;
-                }
-                else if (random.number0 == 2)
-                {
-                    string2 = "Charmer";
-                    deception += 4;
-                    insight += 4;
-                    persuasion += 4;
-                }
-                else if (random.number0 == 3)
-                {
-                    string2 = "Rough Upbringing";
-                    expertiseStreetwise += 4;
-                    intimidation += 6;
-                    perception += 2;
+                    closeCombatWeapon += 6;
+                    closeCombatUnarmed += 4;
+                    //ranged combat(chooseone) += 4
                 }
                 else
                 {
-                    string2 = "Sharp Mind";
-                    //expertise(choose 1) += 4;
+                    //closecombat(choose1) += 6
+                    rangedCombatWeapon += 8;
+                }
+                random.Random4();
+                if (random.number0 == 0)
+                {
+                    string3 = "Soldier";
+                    expertiseMilitary += 6;
+                    vehicles += 6;
+                    
+                }
+                else if (random.number0 == 1)
+                {
+                    string3 = "Time-Displaced";
+                    expertiseHistory += 6;
+                    random.Random2();
+                    if (random.number0 == 0)
+                    {
+                        expertiseMagic += 6;
+                    }
+                    else
+                    {
+                        technology += 6;
+                    }
+                }
+                else if (random.number0 == 2)
+                {
+                    string3 = "Vigilante";
+                    expertiseStreetwise += 6;
+                    investigation += 6;
+                }
+              
+                else
+                {
+                    string3 = "Weaponsmith";
+                    expertiseWeapons += 6;
+                    technology += 6;
+                }
+                random.Random3();
+                if (random.number0 == 0)
+                {
+                    string4 = "Flamboyant";
+                    acrobatics += 8;
+                    athletics += 4;
+                    sleightOfHand += 4;
+                }
+                else if (random.number0 == 1)
+                {
+                    string4 = "Instinctive";
+                    acrobatics += 6;
+                    athletics += 6;
+                    stealth += 4;
+                }
+               
+                else
+                {
+                    string4 = "Sneaky";
+                    acrobatics += 6;
+                    athletics += 4;
+                    stealth += 6;
+                }
+                random.Random5();
+                if (random.number0 == 0)
+                {
+                    string5 = "Assertive";
+                    insight += 8;
+                    intimidation += 8;
+                    persuasion += 8;
+                }
+                else if (random.number0 == 1)
+                {
+                    string5 = "Cunning";
+                    deception += 10;
+                    insight += 8;
+                    perception += 6;
+                }
+                else if (random.number0 == 2)
+                {
+                    string5 = "Empathic";
+                    perception += 6;
+                    insight += 10;
+                    persuasion += 8;
+                }
+                else if (random.number0 == 3)
+                {
+                    string5 = "Forceful Personality";
+                    deception += 8;
+                    intimidation += 8;
+                    persuasion += 8;
+                }
+                else
+                {
+                    string5 = "Smooth Talker";
+                    deception += 10;
                     insight += 4;
-                    perception += 4;
+                    persuasion += 10;
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
+                background1.text = string3 + ", " + string4 + ", " + string5;
             }
             else if (Archetype[i] == "Weather Controller")
             {
@@ -3280,41 +3359,39 @@ public class NPCStats : MonoBehaviour
                     adv1 = new string[] { "Benefit(Status)", "Connected" };
                 }
                 adv2 = new string[] { "Defensive Roll 3" };
-                random.Random5();
+                //expertise(1) += 8
+                random.Random4();
                 if (random.number0 == 0)
                 {
-                    string2 = "Athlete";
-                    rangedCombatThrowing += 4;
-                    athletics += 4;
-                    perception += 4;
+                    string2 = "Attuned";
+                    //expertise(1) += 8;
+                    insight += 8;
+                    perception += 8;
                 }
                 else if (random.number0 == 1)
                 {
-                    string2 = "Ex-Military";
-                    rangedCombatThrowing += 4;
-                    expertiseMilitary += 4;
+                    string2 = "Organic";
+                    expertiseBiology += 8;
+                    persuasion += 8;
                     perception += 4;
+                    treatment += 4;
                 }
                 else if (random.number0 == 2)
                 {
-                    string2 = "Charmer";
+                    string2 = "Sneak";
                     deception += 4;
-                    insight += 4;
-                    persuasion += 4;
-                }
-                else if (random.number0 == 3)
-                {
-                    string2 = "Rough Upbringing";
                     expertiseStreetwise += 4;
-                    intimidation += 6;
-                    perception += 2;
+                    sleightOfHand += 8;
+                    stealth += 8;
                 }
+                
                 else
                 {
-                    string2 = "Sharp Mind";
-                    //expertise(choose 1) += 4;
-                    insight += 4;
-                    perception += 4;
+                    string2 = "Spirited";
+                    acrobatics += 8;
+                    athletics += 8;
+                    intimidation += 8;
+                    
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
             }
@@ -3323,169 +3400,191 @@ public class NPCStats : MonoBehaviour
 
             }
             Name.text = Archetype[0] + " (" + SubArchetype[0] + ")";
-            if (acrobatics > 0)
             {
-                acrobatics += Agility;
-                skillCount += 1;
-            }
-            if (athletics > 0)
-            {
-                athletics += Strength;
-                skillCount += 1;
-            }
-            if (closeCombatUnarmed > 0)
-            {
-                closeCombatUnarmed += Fighting;
-                skillCount += 1;
-            }
-            if (closeCombatGadgets > 0)
-            {
-                closeCombatGadgets += Fighting;
-                skillCount += 1;
-            }
-            if (deception > 0)
-            {
-                deception += Presence;
-                skillCount += 1;
-            }
-            if (expertiseBusiness > 0)
-            {
-                expertiseBusiness += Intellect;
-                skillCount += 1;
-            }
-            if (expertiseCurrentEvents > 0)
-            {
-                expertiseCurrentEvents += Intellect;
-                skillCount += 1;
-            }
-            if (expertiseElements > 0)
-            {
-                expertiseElements += Intellect;
-                skillCount += 1;
-            }
-            if (expertiseHistory > 0)
-            {
-                expertiseHistory += Intellect;
-                skillCount += 1;
-            }
-            if (expertiseMythology > 0)
-            {
-                expertiseMythology += Intellect;
-                skillCount += 1;
-            }
-            if (expertiseScience > 0)
-            {
-                expertiseScience += Intellect;
-                skillCount += 1;
-            }
-            if (expertiseMagic > 0)
-            {
-                expertiseMagic += Intellect;
-                skillCount += 1;
-            }
-            if (expertisePhilosophy > 0)
-            {
-                expertisePhilosophy += Intellect;
-                skillCount += 1;
-            }
-            if (expertiseTactics > 0)
-            {
-                expertiseTactics += Intellect;
-                skillCount += 1;
-            }
-            if (expertisePopCulture > 0)
-            {
-                expertisePopCulture += Intellect;
-                skillCount += 1;
-            }
-            if (expertiseRepair > 0)
-            {
-                expertiseRepair += Intellect;
-                skillCount += 1;
-            }
-            if (expertiseMilitary > 0)
-            {
-                expertiseMilitary += Intellect;
-                skillCount += 1;
-            }
-            if (expertiseStreetwise > 0)
-            {
-                expertiseStreetwise += Intellect;
-                skillCount += 1;
-            }
-            if (insight > 0)
-            {
-                insight += Awareness;
-                skillCount += 1;
-            }
-            if (intimidation > 0)
-            {
-                intimidation += Presence;
-                skillCount += 1;
-            }
-            if (investigation > 0)
-            {
-                investigation += Intellect;
-                skillCount += 1;
-            }
-            if (persuasion > 0)
-            {
-                persuasion += Presence;
-                skillCount += 1;
-            }
-            if (perception > 0)
-            {
-                perception += Awareness;
-                skillCount += 1;
-            }
-            if (rangedCombatElement > 0)
-            {
-                rangedCombatElement += Dexterity;
-                skillCount += 1;
-            }
-            if (rangedCombatEnergyControl > 0)
-            {
-                rangedCombatEnergyControl += Dexterity;
-                skillCount += 1;
-            }
-            if (rangedCombatGadgets > 0)
-            {
-                rangedCombatGadgets += Dexterity;
-                skillCount += 1;
-            }
-            if (rangedCombatThrowing > 0)
-            {
-                rangedCombatThrowing += Dexterity;
-                skillCount += 1;
-            }
-            if (sleightOfHand > 0)
-            {
-                sleightOfHand += Dexterity;
-                skillCount += 1;
-            }
-            if (stealth > 0)
-            {
-                stealth += Agility;
-                skillCount += 1;
-            }
-            if (technology > 0)
-            {
-                technology += Intellect;
-                skillCount += 1;
-            }
-            if (treatment > 0)
-            {
-                treatment += Intellect;
-                skillCount += 1;
-            }
-            if (vehicles > 0)
-            {
-                vehicles += Dexterity;
-                skillCount += 1;
+                if (acrobatics > 0)
+                {
+                    acrobatics += Agility;
+                    skillCount += 1;
+                }
+                if (athletics > 0)
+                {
+                    athletics += Strength;
+                    skillCount += 1;
+                }
+                if (closeCombatUnarmed > 0)
+                {
+                    closeCombatUnarmed += Fighting;
+                    skillCount += 1;
+                }
+                if (closeCombatGadgets > 0)
+                {
+                    closeCombatGadgets += Fighting;
+                    skillCount += 1;
+                }
+                if (deception > 0)
+                {
+                    deception += Presence;
+                    skillCount += 1;
+                }
+                if (expertiseBusiness > 0)
+                {
+                    expertiseBusiness += Intellect;
+                    skillCount += 1;
+                }
+                if (expertiseCurrentEvents > 0)
+                {
+                    expertiseCurrentEvents += Intellect;
+                    skillCount += 1;
+                }
+                if (expertiseElements > 0)
+                {
+                    expertiseElements += Intellect;
+                    skillCount += 1;
+                }
+                if (expertiseHistory > 0)
+                {
+                    expertiseHistory += Intellect;
+                    skillCount += 1;
+                }
+                if (expertiseMythology > 0)
+                {
+                    expertiseMythology += Intellect;
+                    skillCount += 1;
+                }
+                if (expertiseScience > 0)
+                {
+                    expertiseScience += Intellect;
+                    skillCount += 1;
+                }
+                if (expertiseMagic > 0)
+                {
+                    expertiseMagic += Intellect;
+                    skillCount += 1;
+                }
+                if (expertisePhilosophy > 0)
+                {
+                    expertisePhilosophy += Intellect;
+                    skillCount += 1;
+                }
+                if (expertiseTactics > 0)
+                {
+                    expertiseTactics += Intellect;
+                    skillCount += 1;
+                }
+                if (expertisePopCulture > 0)
+                {
+                    expertisePopCulture += Intellect;
+                    skillCount += 1;
+                }
+                if (expertiseRepair > 0)
+                {
+                    expertiseRepair += Intellect;
+                    skillCount += 1;
+                }
+                if (expertiseMilitary > 0)
+                {
+                    expertiseMilitary += Intellect;
+                    skillCount += 1;
+                }
+                if (expertiseStreetwise > 0)
+                {
+                    expertiseStreetwise += Intellect;
+                    skillCount += 1;
+                }
+                if (expertiseWeapons > 0)
+                {
+                    expertiseWeapons += Intellect;
+                    skillCount += 1;
+                }
+                if (insight > 0)
+                {
+                    insight += Awareness;
+                    skillCount += 1;
+                }
+                if (intimidation > 0)
+                {
+                    intimidation += Presence;
+                    skillCount += 1;
+                }
+                if (investigation > 0)
+                {
+                    investigation += Intellect;
+                    skillCount += 1;
+                }
+                if (persuasion > 0)
+                {
+                    persuasion += Presence;
+                    skillCount += 1;
+                }
+                if (perception > 0)
+                {
+                    perception += Awareness;
+                    skillCount += 1;
+                }
+                if (rangedCombatElement > 0)
+                {
+                    rangedCombatElement += Dexterity;
+                    skillCount += 1;
+                }
+                if (rangedCombatEnergyControl > 0)
+                {
+                    rangedCombatEnergyControl += Dexterity;
+                    skillCount += 1;
+                }
+                if (rangedCombatGadgets > 0)
+                {
+                    rangedCombatGadgets += Dexterity;
+                    skillCount += 1;
+                }
+                if (rangedCombatThrowing > 0)
+                {
+                    rangedCombatThrowing += Dexterity;
+                    skillCount += 1;
+                }
+                if (sleightOfHand > 0)
+                {
+                    sleightOfHand += Dexterity;
+                    skillCount += 1;
+                }
+                if (stealth > 0)
+                {
+                    stealth += Agility;
+                    skillCount += 1;
+                }
+                if (technology > 0)
+                {
+                    technology += Intellect;
+                    skillCount += 1;
+                }
+                if (treatment > 0)
+                {
+                    treatment += Intellect;
+                    skillCount += 1;
+                }
+                if (vehicles > 0)
+                {
+                    vehicles += Dexterity;
+                    skillCount += 1;
+                }
             }
             
         }
-        
+        for (int i = 0; i < adv0.Length; i++)
+        {
+            Adv0 = Adv0 + ", " + adv0[i].ToString();
+        }
+        for (int i = 0; i < adv1.Length; i++)
+        {
+            Adv1 = Adv1 + ", " + adv1[i].ToString();
+        }
+        for (int i = 0; i < adv2.Length; i++)
+        {
+            Adv2 = Adv2 + ", " + adv2[i].ToString();
+        }
+        for (int i = 0; i < adv3.Length; i++)
+        {
+            Adv3 = Adv3 + ", " + adv3[i].ToString();
+        }
     }
 
     // Update is called once per frame
@@ -3512,12 +3611,14 @@ public class NPCStats : MonoBehaviour
             dexterity.GetComponent<Text>().text = Dexterity.ToString();
             intellect.GetComponent<Text>().text = Intellect.ToString();
             presence.GetComponent<Text>().text = Presence.ToString();
-
+            advantage0.text = Adv0;
+            advantage1.text = Adv1;
+            advantage2.text = Adv2;
+            advantage3.text = Adv3;
             displayname.text = Name.text;
             displayBackground.text = background0.text;
-            //advantage0.text =   
-            //displayadvantage1.text = Advantage1.text;
-            //displayadvantage2.text = Advantage2.text;
+            displayBackground2.text = background1.text;
+            
         }
         if (Display == false)
         {

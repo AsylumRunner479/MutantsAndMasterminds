@@ -23,6 +23,7 @@ public class NPCStats : MonoBehaviour
     private string[] subArchetypes = new string[] { };
     private string[] lastNames = new string[] { "Isayev", "Tikhonov", "Chapayev", "Petka", "Anka", "Furmanov", "Budyonny", "Caesar", "Rzhevsky", "Tolstoy", "Bezukhov", "Blonsky", "Romanov", "Pavlovna", "Rostova", "Bolkonsky", "Kuragin", "Vidor", "Bondarchuk", "Levi", "Livinov", "Solomin", "Aksyonov", "Kalashnikov", "Gorbachev", "Smirnov", "Chernov", "Putin", "Brezhnev", "Pushkin", "Lipatov", "Khruschev", "Yeltsin", "Medvedev", "Anatolievych", "Vladimirovich" };
     private int skillCount;
+    private GameObject[] skilltags;
     private int acrobatics = 0,
         athletics = 0,
         closeCombatGadgets = 0,
@@ -3510,308 +3511,190 @@ public class NPCStats : MonoBehaviour
                 {
 
                     acrobatics += Agility;
-                    skillName.GetComponent<Text>().text = "Acrobatics";
-                    skillNum.GetComponent<Text>().text = acrobatics.ToString();
+                    
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x,skillList.transform.position.y + 25 * skillCount,0), new Quaternion(0,0,0,0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                   
                 }
                 if (athletics > 0)
                 {
                     athletics += Strength;
-                    skillName.GetComponent<Text>().text = "Athletics";
-                    skillNum.GetComponent<Text>().text = athletics.ToString();
+                    
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                    
                 }
                 if (closeCombatUnarmed > 0)
                 {
                     closeCombatUnarmed += Fighting;
-                    skillName.GetComponent<Text>().text = "Close Combat: Unarmed";
-                    skillNum.GetComponent<Text>().text = closeCombatUnarmed.ToString();
+                    
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                   
                 }
                 if (closeCombatGadgets > 0)
                 {
                     closeCombatGadgets += Fighting;
-                    skillName.GetComponent<Text>().text = "Close Combat: Gadgets";
-                    skillNum.GetComponent<Text>().text = closeCombatGadgets.ToString();
+                    
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                    
                 }
                 if (closeCombatWeapon > 0)
                 {
                     closeCombatWeapon += Fighting;
-                    skillName.GetComponent<Text>().text = "Close Combat: Weapon";
-                    skillNum.GetComponent<Text>().text = closeCombatWeapon.ToString();
+                    
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                    
                 }
                 if (deception > 0)
                 {
                     deception += Presence;
-                    skillName.GetComponent<Text>().text = "Deception";
-                    skillNum.GetComponent<Text>().text = deception.ToString();
+                    
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                    
                 }
                 if (expertiseBusiness > 0)
                 {
                     expertiseBusiness += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Business";
-                    skillNum.GetComponent<Text>().text = expertiseBusiness.ToString();
+                    
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                    
                 }
                 if (expertiseBiology > 0)
                 {
                     expertiseBiology += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Biology";
-                    skillNum.GetComponent<Text>().text = expertiseBiology.ToString();
+                   
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                    
                 }
                 if (expertiseCurrentEvents > 0)
                 {
                     expertiseCurrentEvents += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Current Events";
-                    skillNum.GetComponent<Text>().text = expertiseCurrentEvents.ToString();
+                   
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                    
                 }
                 if (expertiseElements > 0)
                 {
                     expertiseElements += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Elements";
-                    skillNum.GetComponent<Text>().text = expertiseElements.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (expertiseHistory > 0)
                 {
                     expertiseHistory += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: History";
-                    skillNum.GetComponent<Text>().text = expertiseHistory.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (expertiseMythology > 0)
                 {
                     expertiseMythology += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Mythology";
-                    skillNum.GetComponent<Text>().text = expertiseMythology.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (expertiseScience > 0)
                 {
                     expertiseScience += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Science";
-                    skillNum.GetComponent<Text>().text = expertiseScience.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (expertiseMagic > 0)
                 {
                     expertiseMagic += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Magic";
-                    skillNum.GetComponent<Text>().text = expertiseMagic.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (expertisePhilosophy > 0)
                 {
                     expertisePhilosophy += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Philosophy";
-                    skillNum.GetComponent<Text>().text = expertisePhilosophy.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (expertiseTactics > 0)
                 {
                     expertiseTactics += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Tactics";
-                    skillNum.GetComponent<Text>().text = expertiseTactics.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (expertisePopCulture > 0)
                 {
                     expertisePopCulture += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Pop Culture";
-                    skillNum.GetComponent<Text>().text = expertisePopCulture.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (expertiseRepair > 0)
                 {
                     expertiseRepair += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Repair";
-                    skillNum.GetComponent<Text>().text = expertiseRepair.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (expertiseMilitary > 0)
                 {
                     expertiseMilitary += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Military";
-                    skillNum.GetComponent<Text>().text = expertiseMilitary.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (expertiseStreetwise > 0)
                 {
                     expertiseStreetwise += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Streetwise";
-                    skillNum.GetComponent<Text>().text = expertiseStreetwise.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (expertiseWeapons > 0)
                 {
                     expertiseWeapons += Intellect;
-                    skillName.GetComponent<Text>().text = "Expertise: Weapons";
-                    skillNum.GetComponent<Text>().text = expertiseWeapons.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (insight > 0)
                 {
                     insight += Awareness;
-                    skillName.GetComponent<Text>().text = "Insight";
-                    skillNum.GetComponent<Text>().text = insight.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
                 }
                 if (intimidation > 0)
                 {
                     intimidation += Presence;
-                    skillName.GetComponent<Text>().text = "Intimidation";
-                    skillNum.GetComponent<Text>().text = intimidation.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
                 }
                 if (investigation > 0)
                 {
                     investigation += Intellect;
-                    skillName.GetComponent<Text>().text = "Investigation";
-                    skillNum.GetComponent<Text>().text = investigation.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
                 }
                 if (persuasion > 0)
                 {
                     persuasion += Presence;
-                    skillName.GetComponent<Text>().text = "Persuasion";
-                    skillNum.GetComponent<Text>().text = persuasion.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
                 }
                 if (perception > 0)
                 {
                     perception += Awareness;
-                    skillName.GetComponent<Text>().text = "Perception";
-                    skillNum.GetComponent<Text>().text = perception.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
                 }
                 if (rangedCombatElement > 0)
                 {
                     rangedCombatElement += Dexterity;
-                    skillName.GetComponent<Text>().text = "Ranged Combat: Element";
-                    skillNum.GetComponent<Text>().text = rangedCombatElement.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
                 }
                 if (rangedCombatEnergyControl > 0)
                 {
                     rangedCombatEnergyControl += Dexterity;
-                    skillName.GetComponent<Text>().text = "Ranged Combat: Energy Control";
-                    skillNum.GetComponent<Text>().text = intimidation.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
                 }
                 if (rangedCombatGadgets > 0)
                 {
                     rangedCombatGadgets += Dexterity;
-                    skillName.GetComponent<Text>().text = "Ranged Combat: Gadgets";
-                    skillNum.GetComponent<Text>().text = rangedCombatGadgets.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
                 }
                 if (rangedCombatThrowing > 0)
                 {
                     rangedCombatThrowing += Dexterity;
-                    skillName.GetComponent<Text>().text = "Ranged Combat: Throwing";
-                    skillNum.GetComponent<Text>().text = rangedCombatThrowing.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
                 }
                 if (sleightOfHand > 0)
                 {
                     sleightOfHand += Dexterity;
-                    skillName.GetComponent<Text>().text = "Sleight Of Hand";
-                    skillNum.GetComponent<Text>().text = sleightOfHand.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
                 }
                 if (stealth > 0)
                 {
                     stealth += Agility;
-                    skillName.GetComponent<Text>().text = "Stealth";
-                    skillNum.GetComponent<Text>().text = stealth.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
                 }
                 if (technology > 0)
                 {
                     technology += Intellect;
-                    skillName.GetComponent<Text>().text = "Technology";
-                    skillNum.GetComponent<Text>().text = intimidation.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
                 }
                 if (treatment > 0)
                 {
                     treatment += Intellect;
-                    skillName.GetComponent<Text>().text = "Treatment";
-                    skillNum.GetComponent<Text>().text = treatment.ToString();
                     skillCount += 1;
-                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
-                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
                 }
                 if (vehicles > 0)
                 {
@@ -3867,14 +3750,352 @@ public class NPCStats : MonoBehaviour
             dexterity.GetComponent<Text>().text = Dexterity.ToString();
             intellect.GetComponent<Text>().text = Intellect.ToString();
             presence.GetComponent<Text>().text = Presence.ToString();
-            advantage0.text = Adv0;
-            advantage1.text = Adv1;
-            advantage2.text = Adv2;
-            advantage3.text = Adv3;
+            if (Adv0 != null)
+            {
+                advantage0.text = Adv0;
+            }
+            if (Adv1 != null)
+            {
+                advantage1.text = Adv1;
+            }
+            if (Adv2 != null)
+            {
+                advantage2.text = Adv2;
+            }
+            if (Adv3 != null)
+            {
+                advantage3.text = Adv3;
+            }
             displayname.text = Name.text;
             displayBackground.text = background0.text;
             displayBackground2.text = background1.text;
-            
+           
+            if (skilltags == null)
+            {
+                skilltags = GameObject.FindGameObjectsWithTag("skill");
+            }
+            for (int i = 0; i < skilltags.Length; i++)
+            {
+                Destroy(skilltags[0]);
+            }
+            {
+                if (acrobatics > 0)
+                {
+
+
+                    skillName.GetComponent<Text>().text = "Acrobatics";
+                    skillNum.GetComponent<Text>().text = acrobatics.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (athletics > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Athletics";
+                    skillNum.GetComponent<Text>().text = athletics.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (closeCombatUnarmed > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Close Combat: Unarmed";
+                    skillNum.GetComponent<Text>().text = closeCombatUnarmed.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (closeCombatGadgets > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Close Combat: Gadgets";
+                    skillNum.GetComponent<Text>().text = closeCombatGadgets.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (closeCombatWeapon > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Close Combat: Weapon";
+                    skillNum.GetComponent<Text>().text = closeCombatWeapon.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (deception > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Deception";
+                    skillNum.GetComponent<Text>().text = deception.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseBusiness > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Business";
+                    skillNum.GetComponent<Text>().text = expertiseBusiness.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseBiology > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Biology";
+                    skillNum.GetComponent<Text>().text = expertiseBiology.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseCurrentEvents > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Current Events";
+                    skillNum.GetComponent<Text>().text = expertiseCurrentEvents.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseElements > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Elements";
+                    skillNum.GetComponent<Text>().text = expertiseElements.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseHistory > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: History";
+                    skillNum.GetComponent<Text>().text = expertiseHistory.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseMythology > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Mythology";
+                    skillNum.GetComponent<Text>().text = expertiseMythology.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseScience > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Science";
+                    skillNum.GetComponent<Text>().text = expertiseScience.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseMagic > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Magic";
+                    skillNum.GetComponent<Text>().text = expertiseMagic.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertisePhilosophy > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Philosophy";
+                    skillNum.GetComponent<Text>().text = expertisePhilosophy.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseTactics > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Tactics";
+                    skillNum.GetComponent<Text>().text = expertiseTactics.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertisePopCulture > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Pop Culture";
+                    skillNum.GetComponent<Text>().text = expertisePopCulture.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseRepair > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Repair";
+                    skillNum.GetComponent<Text>().text = expertiseRepair.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseMilitary > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Military";
+                    skillNum.GetComponent<Text>().text = expertiseMilitary.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseStreetwise > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Streetwise";
+                    skillNum.GetComponent<Text>().text = expertiseStreetwise.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (expertiseWeapons > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Expertise: Weapons";
+                    skillNum.GetComponent<Text>().text = expertiseWeapons.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (insight > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Insight";
+                    skillNum.GetComponent<Text>().text = insight.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0), skillList.transform);
+                }
+                if (intimidation > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Intimidation";
+                    skillNum.GetComponent<Text>().text = intimidation.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+                if (investigation > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Investigation";
+                    skillNum.GetComponent<Text>().text = investigation.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+                if (persuasion > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Persuasion";
+                    skillNum.GetComponent<Text>().text = persuasion.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+                if (perception > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Perception";
+                    skillNum.GetComponent<Text>().text = perception.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+                if (rangedCombatElement > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Ranged Combat: Element";
+                    skillNum.GetComponent<Text>().text = rangedCombatElement.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+                if (rangedCombatEnergyControl > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Ranged Combat: Energy Control";
+                    skillNum.GetComponent<Text>().text = intimidation.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+                if (rangedCombatGadgets > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Ranged Combat: Gadgets";
+                    skillNum.GetComponent<Text>().text = rangedCombatGadgets.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+                if (rangedCombatThrowing > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Ranged Combat: Throwing";
+                    skillNum.GetComponent<Text>().text = rangedCombatThrowing.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+                if (sleightOfHand > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Sleight Of Hand";
+                    skillNum.GetComponent<Text>().text = sleightOfHand.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+                if (stealth > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Stealth";
+                    skillNum.GetComponent<Text>().text = stealth.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+                if (technology > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Technology";
+                    skillNum.GetComponent<Text>().text = intimidation.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+                if (treatment > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Treatment";
+                    skillNum.GetComponent<Text>().text = treatment.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+                if (vehicles > 0)
+                {
+
+                    skillName.GetComponent<Text>().text = "Vehicles";
+                    skillNum.GetComponent<Text>().text = vehicles.ToString();
+                    skillCount += 1;
+                    Instantiate(skillName, new Vector3(skillList.transform.position.x, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                    Instantiate(skillNum, new Vector3(skillList.transform.position.x + 150, skillList.transform.position.y + 25 * skillCount, 0), new Quaternion(0, 0, 0, 0));
+                }
+            }
         }
         if (Display == false)
         {

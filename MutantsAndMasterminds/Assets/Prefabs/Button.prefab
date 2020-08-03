@@ -344,6 +344,9 @@ MonoBehaviour:
   advantage2: {fileID: 0}
   advantage3: {fileID: 0}
   self: {fileID: 3199310449531407380}
+  skillName: {fileID: 6193920124924967805, guid: b2e921eacef6b444892f8c18e3f4804e, type: 3}
+  skillNum: {fileID: 3070844514541047439, guid: 78dd6b8036563304982299571902b242, type: 3}
+  skillList: {fileID: 0}
 --- !u!114 &3199310449531407387
 MonoBehaviour:
   m_ObjectHideFlags: 0

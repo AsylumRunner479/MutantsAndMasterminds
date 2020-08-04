@@ -315,6 +315,12 @@ MonoBehaviour:
   Dexterity: 0
   Intellect: 0
   Presence: 0
+  Dodge: 0
+  Fortitude: 0
+  Parry: 0
+  Toughness: 0
+  Will: 0
+  Initiative: 0
   strength: {fileID: 0}
   agility: {fileID: 0}
   fighting: {fileID: 0}
@@ -323,6 +329,12 @@ MonoBehaviour:
   dexterity: {fileID: 0}
   intellect: {fileID: 0}
   presence: {fileID: 0}
+  dodge: {fileID: 0}
+  fortitude: {fileID: 0}
+  parry: {fileID: 0}
+  toughness: {fileID: 0}
+  will: {fileID: 0}
+  initiative: {fileID: 0}
   Name: {fileID: 3199310448646066275}
   displayname: {fileID: 0}
   background0: {fileID: 3199310449144376854}

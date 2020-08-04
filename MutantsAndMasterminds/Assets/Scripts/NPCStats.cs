@@ -7,7 +7,9 @@ public class NPCStats : MonoBehaviour
 {
     public RandomNumber random;
     public int Strength, Agility, Fighting, Awareness, Stamina, Dexterity, Intellect, Presence;
+    public int Dodge, Fortitude, Parry, Toughness, Will, Initiative;
     public GameObject strength, agility, fighting, awareness, stamina, dexterity, intellect, presence;
+    public GameObject dodge, fortitude, parry, toughness, will, initiative;
     public Text Name, displayname, background0, background1;
     public string[] Archetype, displayArchetype;
     public string[] SubArchetype, displaySubArchetype;
@@ -191,6 +193,7 @@ public class NPCStats : MonoBehaviour
             Debug.Log(archetypes[i]);
             if (Archetype[i] == "Battlesuit")
             {
+                
                 subArchetypes = new string[] { "Genius", "Military", "Accidental" };
                 SubArchetype[i] = subArchetypes[Random.Range(0, subArchetypes.Length)];
                 if (SubArchetype[i] == "Genius")
@@ -328,7 +331,12 @@ public class NPCStats : MonoBehaviour
                     technology += 4;
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
-
+                Dodge += Agility + 4;
+                Parry += Fighting + 2;
+                Fortitude += Stamina + 2;
+                Toughness += Stamina + 0;
+                Will += Awareness + 4;
+                Initiative += Agility; 
             }
             else if (Archetype[i] == "Construct")
             {
@@ -467,6 +475,12 @@ public class NPCStats : MonoBehaviour
                     stealth += 6;
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
+                Dodge += Agility + 0;
+                Parry += Fighting + 0;
+                Fortitude += Stamina + 0;
+                Toughness += Stamina + 0;
+                Will += Awareness + 0;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Crime Fighter")
             {
@@ -715,6 +729,12 @@ public class NPCStats : MonoBehaviour
 
                 background0.text = string0 + ", " + string1 + ", " + string2;
                 background1.text = string3 + ", " + string4 + ", " + string5;
+                Dodge += Agility + 7;
+                Parry += Fighting + 5;
+                Fortitude += Stamina + 4;
+                Toughness += Stamina + 0;
+                Will += Awareness + 8;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Elemental")
             {
@@ -851,6 +871,12 @@ public class NPCStats : MonoBehaviour
                     intimidation += 6;
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
+                Dodge += Agility + 4;
+                Parry += Fighting + 2;
+                Fortitude += Stamina + 7;
+                Toughness += Stamina + 0;
+                Will += Awareness + 6;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Energy Controller")
             {
@@ -1057,6 +1083,12 @@ public class NPCStats : MonoBehaviour
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
                 background1.text = string3 + ", " + string4 + ", " + string5;
+                Dodge += Agility + 4;
+                Parry += Fighting + 1;
+                Fortitude += Stamina + 5;
+                Toughness += Stamina + 0;
+                Will += Awareness + 6;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Gadgeteer")
             {
@@ -1162,6 +1194,12 @@ public class NPCStats : MonoBehaviour
                 }
                 adv1 = new string[] { "Beginner's Luck", "Eidetic Memory", "Equipment 3(Headquarters)", "Improvised Tool", "Inventor", "Skill Mastery(Technology)" };
                 background0.text = string0 + ", " + string1 + ", " + string2;
+                Dodge += Agility + 6;
+                Parry += Fighting + 4;
+                Fortitude += Stamina + 7;
+                Toughness += Stamina + 0;
+                Will += Awareness + 6;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Martial Artist")
             {
@@ -1521,6 +1559,12 @@ public class NPCStats : MonoBehaviour
                 
                 background0.text = string0 + ", " + string1 + ", " + string2;
                 background1.text = string3 + ", " + string4 + ", " + string5;
+                Dodge += Agility + 6;
+                Parry += Fighting + 0;
+                Fortitude += Stamina + 6;
+                Toughness += Stamina + 0;
+                Will += Awareness + 5;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Mimic")
             {
@@ -1750,6 +1794,12 @@ public class NPCStats : MonoBehaviour
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
                 background1.text = string3 + ", " + string4 + ", " + string5;
+                Dodge += Agility + 5;
+                Parry += Fighting + 5;
+                Fortitude += Stamina + 5;
+                Toughness += Stamina + 0;
+                Will += Awareness + 5;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Mystic")
             {
@@ -1836,6 +1886,12 @@ public class NPCStats : MonoBehaviour
                     sleightOfHand += 4;
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
+                Dodge += Agility + 7;
+                Parry += Fighting + 4;
+                Fortitude += Stamina + 6;
+                Toughness += Stamina + 0;
+                Will += Awareness + 7;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Paragon")
             {
@@ -1851,6 +1907,12 @@ public class NPCStats : MonoBehaviour
                     Dexterity = 4;
                     Intellect = 3;
                     Presence = 2;
+                    Dodge += Agility + 4;
+                    Parry += Fighting + 4;
+                    Fortitude += Stamina + 4;
+                    Toughness += Stamina + 0;
+                    Will += Awareness + 6;
+                    Initiative += Agility;
                 }
                 else if (SubArchetype[i] == "Superhuman")
                 {
@@ -1862,6 +1924,12 @@ public class NPCStats : MonoBehaviour
                     Dexterity = 4;
                     Intellect = 1;
                     Presence = 2;
+                    Dodge += Agility + 4;
+                    Parry += Fighting + 0;
+                    Fortitude += Stamina + 2;
+                    Toughness += Stamina + 0;
+                    Will += Awareness + 6;
+                    Initiative += Agility;
                 }
                 else
                 {
@@ -1873,6 +1941,12 @@ public class NPCStats : MonoBehaviour
                     Dexterity = 4;
                     Intellect = 0;
                     Presence = 2;
+                    Dodge += Agility + 4;
+                    Parry += Fighting + 0;
+                    Fortitude += Stamina + 2;
+                    Toughness += Stamina + 0;
+                    Will += Awareness + 6;
+                    Initiative += Agility;
                 }
                 random.Random6();
                 if (random.number0 == 0)
@@ -1974,6 +2048,7 @@ public class NPCStats : MonoBehaviour
                     perception += 4;
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
+               
             }
             else if (Archetype[i] == "Powerhouse")
             {
@@ -2177,6 +2252,12 @@ public class NPCStats : MonoBehaviour
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
                 background1.text = string3 + ", " + string4 + ", " + string5;
+                Dodge += Agility + 5;
+                Parry += Fighting + 0;
+                Fortitude += Stamina + 0;
+                Toughness += Stamina + 0;
+                Will += Awareness + 5;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Psychic")
             {
@@ -2329,6 +2410,12 @@ public class NPCStats : MonoBehaviour
                     perception += 4;
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
+                Dodge += Agility + 6;
+                Parry += Fighting + 4;
+                Fortitude += Stamina + 5;
+                Toughness += Stamina + 0;
+                Will += Awareness + 8;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Shapeshifter")
             {
@@ -2458,6 +2545,12 @@ public class NPCStats : MonoBehaviour
                     technology += 6;
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
+                Dodge += Agility + 6;
+                Parry += Fighting + 6;
+                Fortitude += Stamina + 6;
+                Toughness += Stamina + 0;
+                Will += Awareness + 6;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Speedster")
             {
@@ -2591,6 +2684,12 @@ public class NPCStats : MonoBehaviour
                     technology += 6;
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
+                Dodge += Agility + 0;
+                Parry += Fighting + 0;
+                Fortitude += Stamina + 7;
+                Toughness += Stamina + 0;
+                Will += Awareness + 7;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Summoner")
             {
@@ -2647,6 +2746,12 @@ public class NPCStats : MonoBehaviour
                     {
                         technology += 6;
                     }
+                    Dodge += Agility + 10;
+                    Parry += Fighting + 8;
+                    Fortitude += Stamina + 4;
+                    Toughness += Stamina + 0;
+                    Will += Awareness + 7;
+                    Initiative += Agility;
                 }
 
                 
@@ -2666,6 +2771,12 @@ public class NPCStats : MonoBehaviour
                     Dexterity = 1;
                     Intellect = 0;
                     Presence = 2;
+                    Dodge += Agility + 7;
+                    Parry += Fighting + 2;
+                    Fortitude += Stamina + 5;
+                    Toughness += Stamina + 0;
+                    Will += Awareness + 6;
+                    Initiative += Agility;
                 }
                 else if (SubArchetype[i] == "Vampire")
                 {
@@ -2677,6 +2788,12 @@ public class NPCStats : MonoBehaviour
                     Dexterity = 2;
                     Intellect = 2;
                     Presence = 2;
+                    Dodge += Agility + 7;
+                    Parry += Fighting + 2;
+                    Fortitude += Stamina + 5;
+                    Toughness += Stamina + 0;
+                    Will += Awareness + 6;
+                    Initiative += Agility;
                 }
                 else
                 {
@@ -2688,6 +2805,12 @@ public class NPCStats : MonoBehaviour
                     Dexterity = 1;
                     Intellect = 0;
                     Presence = 1;
+                    Dodge += Agility + 7;
+                    Parry += Fighting + 2;
+                    Fortitude += Stamina + 0;
+                    Toughness += Stamina + 0;
+                    Will += Awareness + 8;
+                    Initiative += Agility;
                 }
                 random.Random4();
                 if (random.number0 == 0)
@@ -2924,6 +3047,12 @@ public class NPCStats : MonoBehaviour
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
                 background1.text = string3 + ", " + string4 + ", " + string5;
+                Dodge += Agility + 6;
+                Parry += Fighting + 4;
+                Fortitude += Stamina + 4;
+                Toughness += Stamina + 0;
+                Will += Awareness + 6;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Warrior")
             {
@@ -3057,6 +3186,12 @@ public class NPCStats : MonoBehaviour
                     
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
+                Dodge += Agility + 4;
+                Parry += Fighting + 2;
+                Fortitude += Stamina + 2;
+                Toughness += Stamina + 0;
+                Will += Awareness + 6;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Weapon Master")
             {
@@ -3375,6 +3510,12 @@ public class NPCStats : MonoBehaviour
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
                 background1.text = string3 + ", " + string4 + ", " + string5;
+                Dodge += Agility + 7;
+                Parry += Fighting + 6;
+                Fortitude += Stamina + 5;
+                Toughness += Stamina + 0;
+                Will += Awareness + 8;
+                Initiative += Agility;
             }
             else if (Archetype[i] == "Weather Controller")
             {
@@ -3500,6 +3641,12 @@ public class NPCStats : MonoBehaviour
                     
                 }
                 background0.text = string0 + ", " + string1 + ", " + string2;
+                Dodge += Agility + 2;
+                Parry += Fighting + 0;
+                Fortitude += Stamina + 4;
+                Toughness += Stamina + 0;
+                Will += Awareness + 6;
+                Initiative += Agility;
             }
             else
             {
@@ -3740,8 +3887,15 @@ public class NPCStats : MonoBehaviour
     {
         if (Display == true)
         {
+            
             StatDisplay.SetActive(true);
             NameList.SetActive(false);
+            dodge.GetComponent<Text>().text = Dodge.ToString();
+            fortitude.GetComponent<Text>().text = Fortitude.ToString();
+            parry.GetComponent<Text>().text = Parry.ToString();
+            toughness.GetComponent<Text>().text = Toughness.ToString();
+            will.GetComponent<Text>().text = Will.ToString();
+            initiative.GetComponent<Text>().text = Initiative.ToString();
             strength.GetComponent<Text>().text = Strength.ToString();
             agility.GetComponent<Text>().text = Agility.ToString();
             fighting.GetComponent<Text>().text = Fighting.ToString();
@@ -3750,6 +3904,7 @@ public class NPCStats : MonoBehaviour
             dexterity.GetComponent<Text>().text = Dexterity.ToString();
             intellect.GetComponent<Text>().text = Intellect.ToString();
             presence.GetComponent<Text>().text = Presence.ToString();
+
             if (Adv0 != null)
             {
                 advantage0.text = Adv0;
@@ -3778,6 +3933,7 @@ public class NPCStats : MonoBehaviour
             {
                 Destroy(skilltags[0]);
             }
+            skillCount = 0;
             {
                 if (acrobatics > 0)
                 {

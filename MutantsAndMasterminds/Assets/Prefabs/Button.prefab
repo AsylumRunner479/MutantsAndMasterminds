@@ -356,6 +356,42 @@ MonoBehaviour:
   advantage2: {fileID: 0}
   advantage3: {fileID: 0}
   self: {fileID: 3199310449531407380}
+  Acrobatics: {fileID: 0}
+  Athletics: {fileID: 0}
+  CloseCombatGadgets: {fileID: 0}
+  CloseCombatUnarmed: {fileID: 0}
+  CloseCombatWeapon: {fileID: 0}
+  Deception: {fileID: 0}
+  ExpertiseBusiness: {fileID: 0}
+  ExpertiseBiology: {fileID: 0}
+  ExpertiseCurrentEvents: {fileID: 0}
+  ExpertiseElements: {fileID: 0}
+  ExpertiseHistory: {fileID: 0}
+  ExpertiseScience: {fileID: 0}
+  ExpertiseMagic: {fileID: 0}
+  ExpertiseMilitary: {fileID: 0}
+  ExpertiseMythology: {fileID: 0}
+  ExpertiseRepair: {fileID: 0}
+  ExpertiseStreetwise: {fileID: 0}
+  ExpertisePopCulture: {fileID: 0}
+  ExpertisePhilosophy: {fileID: 0}
+  ExpertiseTactics: {fileID: 0}
+  ExpertiseWeapons: {fileID: 0}
+  Insight: {fileID: 0}
+  Intimidation: {fileID: 0}
+  Investigation: {fileID: 0}
+  Perception: {fileID: 0}
+  Persuasion: {fileID: 0}
+  RangedCombatElement: {fileID: 0}
+  RangedCombatEnergyControl: {fileID: 0}
+  RangedCombatGadgets: {fileID: 0}
+  RangedCombatThrowing: {fileID: 0}
+  RangedCombatWeapon: {fileID: 0}
+  SleightOfHand: {fileID: 0}
+  Stealth: {fileID: 0}
+  Technology: {fileID: 0}
+  Treatment: {fileID: 0}
+  Vehicles: {fileID: 0}
   skillName: {fileID: 6193920124924967805, guid: b2e921eacef6b444892f8c18e3f4804e, type: 3}
   skillNum: {fileID: 3070844514541047439, guid: 78dd6b8036563304982299571902b242, type: 3}
   skillList: {fileID: 0}

@@ -1959,10 +1959,378 @@ public static class ItemData
                 remove = "";
                 break;
             #endregion
-            #region Ingredient 400-499
+            #region Energy Controller 400-499
             case 400:
-                name = "wood";
-                description = "Got wood";
+                name = "Energy Blast";
+                description = "Ranged damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 401:
+                name = "Quick change";
+                description = "transform costume free action";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 410:
+                name = "Enervating Blast";
+                description = "ranged damage, incurable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 411:
+                name = "Homing Blast";
+                description = "ranged damage, homing";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 412:
+                name = "Invisible Blast";
+                description = "ranged damage, subtle";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 413:
+                name = "Phantom Blast";
+                description = "ranged damage, affect incorporal";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 414:
+                name = "Pinpoint Blast";
+                description = "ranged damage, Precise";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 415:
+                name = "Proxy Blast";
+                description = "ranged damage, indirect";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 416:
+                name = "Reflective Blast";
+                description = "ranged damage, ricochet";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 417:
+                name = "Variable Blast";
+                description = "ranged damage, variable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 420:
+                name = "Dazzle";
+                description = "Cumulative Ranged afflication, res dodge, over fort;impaired, disabled, unaware, vision";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 421:
+                name = "Dazzle";
+                description = "Cumulative Ranged afflication, res dodge, over fort;impaired, disabled, unaware, audio";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 422:
+                name = "Disintegrate";
+                description = "Ranged weaken affects objects toughness 8";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 8;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 423:
+                name = "Energy Burst";
+                description = "Burst area damage, penetrating 4";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 424:
+                name = "Energy Burst";
+                description = "Ranged Burst area damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 8;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 425:
+                name = "Energy Constructs";
+                description = "Create 12";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 426:
+                name = "Energy Manipaulation";
+                description = "Deflect 12, reflect, redirect, limit(energy)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 427:
+                name = "Energy Weapon";
+                description = "penetrating damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 428:
+                name = "Enivoronment control";
+                description = "environment 12(eight miles, choose two, Cold/Heat/Impede Movement/Light/Visibility)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 429:
+                name = "Obscure";
+                description = "Ranged Visual concealment 4 attack, burst area";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 430:
+                name = "Obscure";
+                description = "Ranged Visual concealment 4 attack, cloud area";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 431:
+                name = "Snare";
+                description = "Cumulative Ranged Affliction, res by dodge, over with dam; hindered and vulnerable, Defensiveless and Immobile";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 8;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 432:
+                name = "Telekinesis";
+                description = "Move object 12";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 25;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 440:
+                name = "Energy Immunity";
+                description = "Immunity 5(energy control)";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
@@ -1972,39 +2340,151 @@ public static class ItemData
                 heal = 0;
                 iconName = "Ingrediant/wood";
                 meshName = "Ingrediant/wood";
-                type = ItemTypes.Ingredient;
+                type = ItemTypes.EnergyController;
                 use = "cook";
                 remove = "";
                 break;
-            case 401:
-                name = "stone";
-                description = "don't get high";
+            case 441:
+                name = "Energy Absorption";
+                description = "Enh str 10 (fades), Enh sta 10 (fades)";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
-                value = 15;
+                value = 20;
                 damage = 0;
                 armour = 0;
                 heal = 0;
-                iconName = "Ingrediant/stone";
-                meshName = "Ingrediant/stone";
-                type = ItemTypes.Ingredient;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
                 use = "cook";
                 remove = "";
                 break;
-            case 402:
-                name = "steel";
-                description = "It's real";
+            case 442:
+                name = "Energy Shield";
+                description = "Enh dodge 5, Enh parry 5, Imp pro 5(sustained)";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
-                value = 50;
+                value = 20;
                 damage = 0;
                 armour = 0;
                 heal = 0;
-                iconName = "Ingrediant/steel";
-                meshName = "Ingrediant/steel";
-                type = ItemTypes.Ingredient;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 443:
+                name = "Force Field";
+                description = "Imp pro 10, sustained";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 450:
+                name = "Energy Sense";
+                description = "Energy awareness";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 1;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 451:
+                name = "Energy Aura";
+                description = "Reaction damage, activation(strandard action)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 14;
+                damage = 4;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 452:
+                name = "Energy Form";
+                description = "Insubstantial 3(energy), activation(move action)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 14;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 453:
+                name = "Flight";
+                description = "Flight 7";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 14;
+                damage = 4;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 454:
+                name = "Scry";
+                description = "Visual Remote Sensing 14, medium(energy)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 14;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
+                use = "cook";
+                remove = "";
+                break;
+            case 455:
+                name = "Transmit";
+                description = "Teleport 14, Medium(energy)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 14;
+                damage = 4;
+                armour = 0;
+                heal = 0;
+                iconName = "Ingrediant/wood";
+                meshName = "Ingrediant/wood";
+                type = ItemTypes.EnergyController;
                 use = "cook";
                 remove = "";
                 break;

@@ -19,6 +19,8 @@ public class NPCStats : MonoBehaviour
     private string string1, string0, string2, string3, string4, string5;
     private string[] adv0, adv1, adv2, adv3;
     private string Adv0, Adv1, Adv2, Adv3;
+    
+
     public GameObject self;
     private string[] names = new string[] { "Albert", "Bogdan", "Dmitry", "Eduard", "Fedir", "German", "Igor", "Julij", "Konstantin", "Lavrentii", "Maxim", "Naum", "Osip", "Peter", "Roman", "Tit", "Vlad", "Yuri", "Vyacheslav", "Goga", "Alexei", "Viktor", "Misha", "Innokentiy", "Stefan", "Stanislav", "Foma", "Ruslan", "Taras", "Mitrofan", "Erik", "Spartak", "Modest", "Garry", "Nikita", "Boris", "Dobrushin", "Trofim", "Anton", "Mikhail", "Abram", "Gedeon", "Dorofey", "Savin", "Isodor", "Leonid", "Gleb", "Valentin", "David", "Daniil", "Ippolit", "Kirill", "Lazar", "Filipp", "Marlen", "Nestor", "Robert", "Arkady", "Pasha", "Valeriy", "Rolan", "Makariy", "Yulian", "Gennady", "Sergei", "Fanasiy", "Khan", "Semyon", "Yakov", "Rurik", "Faddei", "Yefim", "Nikolay", "Sasha", "Vladimir", "Alexander", "Stas", "Ipatiy", "Kolmogorov", "Vitaliy", "Vladislav", "Artyom", "Yana", "Olga", "Fedor", "Vasily", "Ivanovich", "Leo", "Pierre", "Anna", "Natasha", "Andrei" };
     private string[] archetypes = new string[] { "Battlesuit", "Construct", "Crime Fighter", "Elemental", "Energy Controller", "Gadgeteer", "Martial Artist", "Mimic", "Mystic", "Paragon", "Powerhouse", "Psychic", "Shapeshifter", "Speedster", "Summoner", "Supernatural Creature", "Totem", "Warrior", "Weapon Master", "Weather Controller" };
@@ -3948,7 +3950,7 @@ public class NPCStats : MonoBehaviour
             }
             else
             {
-                advantage0.text = "";
+                advantage0.text = " ";
             }
             if (Adv1 != null)
             {
@@ -3956,7 +3958,7 @@ public class NPCStats : MonoBehaviour
             }
             else
             {
-                advantage1.text = "";
+                advantage1.text = " ";
             }
             if (Adv2 != null)
             {
@@ -3964,7 +3966,7 @@ public class NPCStats : MonoBehaviour
             }
             else
             {
-                advantage2.text = "";
+                advantage2.text = " ";
             }
             if (Adv3 != null)
             {
@@ -3972,7 +3974,7 @@ public class NPCStats : MonoBehaviour
             }
             else
             {
-                advantage3.text = "";
+                advantage3.text = " ";
             }
             displayname.text = Name.text;
             displayBackground.text = background0.text;

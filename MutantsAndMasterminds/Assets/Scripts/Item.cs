@@ -131,6 +131,6 @@ public class Item
         Totem,
         Warrior,
         WeaponMaster,
-        WeatherController.
+        WeatherController,
         
     }

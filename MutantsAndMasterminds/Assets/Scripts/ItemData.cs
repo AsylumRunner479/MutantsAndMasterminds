@@ -317,14 +317,14 @@ public static class ItemData
                 use = "wear";
                 remove = "strip";
                 break;
-            case 42:
+            case 40:
                 name = "Fast and Tough";
-                description = "imprevious protection 8";
+                description = "imprevious protection 2, enh dodge 8, enh parry 4";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
                 value = 16;
-                damage = 8;
+                damage = 0;
                 armour = 0;
                 heal = 0;
                 iconName = "Armour/Med";
@@ -333,6 +333,71 @@ public static class ItemData
                 use = "wear";
                 remove = "strip";
                 break;
+            case 41:
+                name = "Unnatural Speed";
+                description = " enh dodge 10, enh parry 6";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 16;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Armour/Med";
+                meshName = "Armour/Med";
+                type = ItemTypes.Consturct;
+                use = "wear";
+                remove = "strip";
+                break;
+            case 42:
+                name = "Unnatural Toughness";
+                description = "imprevious protection 4, enh dodge 6, enh parry 2";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 16;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Armour/Med";
+                meshName = "Armour/Med";
+                type = ItemTypes.Consturct;
+                use = "wear";
+                remove = "strip";
+                break;
+            case 50:
+                name = "Inhuman Brain";
+                description = "Immunity 10(mental effects)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 10;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Armour/Med";
+                meshName = "Armour/Med";
+                type = ItemTypes.Consturct;
+                use = "wear";
+                remove = "strip";
+                break;
+            case 51:
+                name = "Almost Human";
+                description = "Immunity 5(emotion effects), enh will 5";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 10;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Armour/Med";
+                meshName = "Armour/Med";
+                type = ItemTypes.Consturct;
+                use = "wear";
+                remove = "strip";
+                break;
+
             #endregion
             #region BattleSuit 100-199
             case 100:
@@ -704,102 +769,1192 @@ public static class ItemData
                 remove = "unequip";
                 break;
             #endregion
-            #region Potion 200-299
+            #region CrimeFighter 200-299
             case 200:
-                name = "minHealth";
-                description = "take plenty of drugs";
+                name = "Smartphone";
+                description = "ring people";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
-                value = 1;
+                value = 2;
                 damage = 0;
                 armour = 0;
-                heal = 10;
+                heal = 0;
                 iconName = "Potion/minHealth";
                 meshName = "Potion/minHealth";
-                type = ItemTypes.Potion;
+                type = ItemTypes.CrimeFighter;
                 use = "drink";
                 remove = "";
                 break;
             case 201:
-                name = "medHealth";
-                description = "take plenty of drugs";
-                //Amount of items of that type...Stackable
-                amount = 1;
-                //Buy and Sell Price
-                value = 3;
-                damage = 0;
-                armour = 0;
-                heal = 30;
-                iconName = "Potion/medHealth";
-                meshName = "Potion/medHealth";
-                type = ItemTypes.Potion;
-                use = "drink";
-                remove = "";
-                break;
-            case 202:
-                name = "maxHealth";
-                description = "take plenty of drugs";
+                name = "Motorcycle";
+                description = "Medium, str 1, speed 6, defence 10, toughness 8";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
                 value = 10;
                 damage = 0;
                 armour = 0;
-                heal = 100;
-                iconName = "Potion/maxHealth";
-                meshName = "Potion/maxHealth";
-                type = ItemTypes.Potion;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
                 use = "drink";
                 remove = "";
                 break;
-            #endregion
-            #region Food 300-399
-            case 300:
-                name = "Apple";
-                description = "Munchies and Crunchies";
+            case 202:
+                name = "Knife";
+                description = "Strength based, improved crit";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
-                value = 1;
+                value = 2;
+                damage = 1;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 203:
+                name = "Custom Laser Heavy Pistol";
+                description = "ranged, accurate 2";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 10;
+                damage = 4;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 204:
+                name = "Custom Assault Rifle";
+                description = "ranged multiattack, accurate";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 16;
+                damage = 5;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 210:
+                name = "Combat Suit";
+                description = "Enh str, leap 1, wallcrawling 2, pro 1, infrared senses, removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 7;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 211:
+                name = "Flight Suit";
+                description = "flight 5(wings), ultravision, strength based damage 1, wallcrawling, removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 7;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 212:
+                name = "Stealth Suit defence";
+                description = "concealment 4(all visual), wallcrawling, passive removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 7;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 213:
+                name = "Stealth Suit offence";
+                description = "ranged afflication: resisted and overcome by fortitude; vulnerable defensiveless, unreliable - 5 shots removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 7;
+                damage = 6;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 220:
+                name = "Gimmick Gadgets 0";
+                description = "ranged damage, accurate, easily removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 7;
+                damage = 5;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 221:
+                name = "Gimmick Gadgets 0";
+                description = "ranged cloud area afflication, resisted and overcome by fortitude; dazed, stunned, incapacitated, easily removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 7;
+                damage = 3;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 222:
+                name = "Gimmick Gadgets 1";
+                description = "Safe fall, Swinging, easily removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 7;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 230:
+                name = "Swingline";
+                description = "swinging";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 2;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 240:
+                name = "Bolas";
+                description = "ranger cumlative afflication, resisted by dodge, overcome by damage, hindered and vulnerable, defensiveless and immobilized";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 12;
+                damage = 4;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 241:
+                name = "Boomerangs";
+                description = "Strength based ranged damage, accurate 2";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 12;
+                damage = 1;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 242:
+                name = "Explosives";
+                description = "ranged burst area damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 12;
+                damage = 4;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 243:
+                name = "Power Knuckles";
+                description = "Strength based damage, improved crit, inaccurate";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 12;
+                damage = 3;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 244:
+                name = "Taser";
+                description = "ranged cumulative afflication, resisted and overcome by fort; dazed, stunned, incapacitated";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 12;
+                damage = 4;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            case 245:
+                name = "Tear-Gas Pellets";
+                description = "ranged cloud area afflication, resisted and overcome by fortitude, dazed and visually impaired, stunned and vis disabled";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 12;
+                damage = 4;
+                armour = 0;
+                heal = 0;
+                iconName = "Potion/minHealth";
+                meshName = "Potion/minHealth";
+                type = ItemTypes.CrimeFighter;
+                use = "drink";
+                remove = "";
+                break;
+            
+            #endregion
+            #region Elemental 300-399
+            case 300:
+                name = "Elemental constitution";
+                description = "Immunity 12(critical hits, life support)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 12;
                 damage = 0;
                 armour = 0;
                 heal = 2;
                 iconName = "Food/Apple";
                 meshName = "Food/Apple";
-                type = ItemTypes.Food;
+                type = ItemTypes.Elemental;
                 use = "eat";
                 remove = "";
                 break;
             case 301:
-                name = "Meat";
-                description = "Lisa does not approve";
+                name = "Flame Form";
+                description = "Immunity 5(fire), insubstantial 3, permenent";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 0;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 302:
+                name = "Flight";
+                description = "flight 6";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 12;
+                damage = 0;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 303:
+                name = "Containment Suit";
+                description = "Enh str 6, affects coporeal, removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 16;
+                damage = 0;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 304:
+                name = "Flaming Aura";
+                description = "Reaction damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 16;
+                damage = 4;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 310:
+                name = "Fire Blast";
+                description = "Ranged Damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 12;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 311:
+                name = "Asphyxicate";
+                description = "Burst area progressive affliction, resist and overcome fort; dazed, stunned, incapacitated";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 6;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 312:
+                name = "Fire Ball";
+                description = "ranged burst area";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 8;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 313:
+                name = "Fire Burst";
+                description = "Burst area damage, penetrating 4";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 10;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 314:
+                name = "Flame Shape";
+                description = "sustained shapeable area damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 6;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 315:
+                name = "Flash";
+                description = "Burst area cumulative affliction, resist and overcome fort; vis impaired, vis disabled, vis unaware";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 8;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 316:
+                name = "Open Flame";
+                description = "Environment 6 (Extreme heat, bright light)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 0;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 320:
+                name = "Andoroid host";
+                description = "enh str 6, reduce stamina 7, enh dodge 4, enh parry 4, immunity 20(all fortitude), pro 8";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 34;
+                damage = 0;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 321:
+                name = "Gaseous form";
+                description = "vis concealment 4, partial, defensive roll 2, enh dodge 9, enh parry 9, insubstantial 2, permenent";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 34;
+                damage = 0;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 330:
+                name = "Air blast";
+                description = "ranged damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 12;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 331:
+                name = "Fog";
+                description = "environment 12(Visibility -5, 8 mile)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 0;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 332:
+                name = "Tornado";
+                description = "Cyclinder Move object 8, concentration, duration, damaging";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 0;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 333:
+                name = "Wind Binding";
+                description = "ranged afflication, resisted by dodge, overcome by str; hindered and vulnerable, immobile and defensiveless";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 334:
+                name = "Wind Control";
+                description = "Move object 12";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 335:
+                name = "Wind Screen";
+                description = "deflect 12, Cylinder area(2), limited to dodge attacks";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 12;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 340:
+                name = "Earthen Body";
+                description = "enh str 8, imp pro 8";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 32;
+                damage = 0;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 341:
+                name = "Reconstruction";
+                description = "Regeneration 10, Source(Element)";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
                 value = 5;
                 damage = 0;
                 armour = 0;
-                heal = 5;
-                iconName = "Food/Meat";
-                meshName = "Food/Meat";
-                type = ItemTypes.Food;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
                 use = "eat";
                 remove = "";
                 break;
-            case 302:
-                name = "Pizza";
-                description = "Mamma Mia";
+            case 350:
+                name = "Clay form";
+                description = "elongation 4, insubstantial 1; morph 4, slithering, wallcrawling, surefooted, speed 2";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 37;
+                damage = 12;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 351:
+                name = "Earth form";
+                description = "Burrowing 6, permeate(earth), surefooted, Ranged touch, visual concealment 4(earthen limit)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 15;
+                damage = 12;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 352:
+                name = "Earth Control";
+                description = "perception ranged move object 10(earthen limit)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 12;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 353:
+                name = "Earth Blast";
+                description = "Ranged damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 354:
+                name = "Earthen Snare";
+                description = "Cumulative afflication, resisted by dodge, overcome by dam; hindered and vulnerable, immobile and defenceless";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 355:
+                name = "Particulate form";
+                description = "Elongation 7, insubstantial 2, slithering, sure-footed, speed 2, visual concealment 4,partial";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 23;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 356:
+                name = "Sandstorm";
+                description = "Environment 5(visibility - 5; 500 feet)";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
                 value = 10;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 357:
+                name = "RockForm";
+                description = "Reaction damage, enh str 2, immun 1(own powers), imp pro 4";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 34;
+                damage = 7;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 358:
+                name = "GroundStrike";
+                description = "Burst area afflication, res fort, over dodge; dazed/vulnerable, stunned/prone, both player and targets have to be grounded";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 359:
+                name = "Shockwave";
+                description = "Burst area damage, both player and targets have to grounded";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 360:
+                name = "Plant Form";
+                description = "vis conceal 4(vegetation, immune(plant), teleport 7, medium(plants))";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 13;
                 damage = 0;
                 armour = 0;
-                heal = 15;
-                iconName = "Food/Pizza";
-                meshName = "Food/Pizza";
-                type = ItemTypes.Food;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 361:
+                name = "Plant Toxin";
+                description = "cumulative afflication, res and over by fort; dazed, stunned, incapacitated";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 362:
+                name = "Animate Trees";
+                description = "summon 10, controlled, limited to size availiability(tree)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 363:
+                name = "Entanglement";
+                description = "burst area cumulative afflication, res by dodge, over by dam; hindered and vulnerable, defensiveless and incapacited, limit(ambient plant-life)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 364:
+                name = "Plant perception";
+                description = "remote sensing 5(all senses), medium(plants)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 365:
+                name = "Wood Objects";
+                description = "create 7, innate, movable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 366:
+                name = "Transmit";
+                description = "teleport 10, extended, medium(plants)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 370:
+                name = "Liquid form 0";
+                description = "visual concealment 4, limit(liquid), elongation 8, immunity 2(water), insubstantial 1,permenent";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 60;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 371:
+                name = "Liquid form 1";
+                description = "slithering, surefooted, imp pro 8, regen 8, source(water), swimming 7";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 60;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 372:
+                name = "Water Blast";
+                description = "damage 10";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 373:
+                name = "Dehydrate";
+                description = "cumulative afflication, res and over fort, fatiqued, exhausted, incapacitated";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 374:
+                name = "Drown";
+                description = "progr afflication, res and over fort, dazed, stunned, incapicated";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 6;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 375:
+                name = "Hard Water Objects";
+                description = "create 10";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 376:
+                name = "Move Water";
+                description = "perception ranged move object 10, limit (water)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 377:
+                name = "Watery Snare";
+                description = "ranged afflication, res by dodge, over by str; hindered and vulnerable, immobile and defensiveless";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 380:
+                name = "Ice form";
+                description = "Enh Str 8, immunity 7(cold, ice), imp pro 8, tracking, infrared";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 45;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 381:
+                name = "Ice Slide";
+                description = "flight 5, platform";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+
+            case 390:
+                name = "Ice Blast";
+                description = "ranged damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 391:
+                name = "Cold Blast";
+                description = "ranged afflication, res and over by fort; fatigued, exhausted, incapacitated";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 392:
+                name = "Cold Field";
+                description = "environment 10(extreme cold)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 393:
+                name = "Icy shapes";
+                description = "create 6, continous, innate";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 394:
+                name = "Icy Snare";
+                description = "cumulative afflication, res dodge, over dam; hindered and vulnerable, immobile and defensiveless";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 395:
+                name = "Icy surfaces";
+                description = "environment 10(impede movement)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
                 use = "eat";
                 remove = "";
                 break;

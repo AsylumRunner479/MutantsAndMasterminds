@@ -5260,12 +5260,300 @@ public static class ItemData
                 break;
             case 1212:
                 name = "Giant Size 2";
-                description = "Enh Def";
+                description = "Enh dodge 1, Enh Parry 1, Fort -6, Enh Pre, close combat(unarmed)-2, intimidation 4, immunity 5(bullets)";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
                 value = 72;
                 damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1213:
+                name = "Giant Size 3";
+                description = "Imp toughness 12, pro 1, powerlift 2";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1214:
+                name = "Flight Harness";
+                description = "Flight 6, limited(not grown), removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1220:
+                name = "Shrinking 0";
+                description = "Shrinking 12, dodge 6, parry 6, stealth 12, -6 intimid, continous, norm strength";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1221:
+                name = "Shrinking 1";
+                description = "damage, limit (damage linked to shrinking)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 8;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1222:
+                name = "Shrinking 2";
+                description = "Evasion 2, hide in sight, Imp def, Imp trip, Pow Att, redirect, Set-up, taunt, Ult Effort(dodge), imp pro 1";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1223:
+                name = "Flight Harness";
+                description = "Flight 5, removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1230:
+                name = "Density Increase 0";
+                description = "Growth 5, +5 Str, +5 Sta, density, continous";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1231:
+                name = "Density Increase 1";
+                description = "Enh Sta 5, Enh Str 5, - 3 def roll, - 2 close combat(unarmed), fort - 6";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1232:
+                name = "Density Increase 2";
+                description = "all att, great endur, Imp grab, Imp hold, Imp smash, interpose, Pow Att, Ult Eff(toughness)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1233:
+                name = "Density Increase 3";
+                description = "Immunity 17(life support, bullets, crit), Imp tough 12";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1234:
+                name = "Like Hitting a Brick Wall";
+                description = "Reaction damage, when hit";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 1;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1235:
+                name = "Foot Stomp";
+                description = "Line Damage, both target and player must share surface";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1236:
+                name = "Flight Harness";
+                description = "Flight 6, Limit(growth inactive), removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1240:
+                name = "Density Decrease 0";
+                description = "Insubstantial 4(incorporal, affected by magic), reaction";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1241:
+                name = "Density Decrease 1";
+                description = "Flight 1, limit(airwalking), immunity 10(life support, suffocation(when holding breath))";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1242:
+                name = "Density Decrease 2";
+                description = "Concealment 1(hearing), continous";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1243:
+                name = "Incorporal Weapon";
+                description = "Affect corporal, damage, res fort, Limit(toughness of weapon)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1244:
+                name = "Disrupts Electronics";
+                description = "Affect corporal, damage, res fort, Limit(toughness of weapon)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 12;
                 armour = 0;
                 heal = 0;
                 iconName = "Misc/trans";

@@ -5548,7 +5548,7 @@ public static class ItemData
                 break;
             case 1244:
                 name = "Disrupts Electronics";
-                description = "Affect corporal, damage, res fort, Limit(toughness of weapon)";
+                description = " Close Range, Affect Corporal, Nullify";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
@@ -5562,57 +5562,1081 @@ public static class ItemData
                 use = "use";
                 remove = "";
                 break;
-            #endregion
-            #region Speedster 1300-1399
-            case 1300:
-                name = "Mystic awareness";
-                description = "senses 3, mystic awareness, analytical, radius";
+            case 1245:
+                name = "Disrupts Synapses";
+                description = " affects corporal, afflication, res/over fort, daze, stun, incapicate";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
                 value = 24;
+                damage = 12;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1246:
+                name = "Innate Understanding of Powers";
+                description = " Enh Close attack 6, def roll 2, hide sight, redirect, setup 2, teamwork, close combat(unarmed) - 8";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
                 damage = 0;
                 armour = 0;
                 heal = 0;
                 iconName = "Misc/trans";
                 meshName = "Misc/trans";
-                type = ItemTypes.Mystic;
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1250:
+                name = "Streacher 0";
+                description = "Strength based damage, elong 8, acc att, choke, CA 2, evas, fast grab, interpose, Imp grab, Imp hold, Imp trip, pro 7, speed 3";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 6;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1251:
+                name = "Streacher 1";
+                description = "Pow Att, Pre Att(close, cover), takedown 2, close combat(grab) 8, Imp tough(limit physical impact) 4, Insubstantial 1(liquid)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 6;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            case 1252:
+                name = "Streacher 2";
+                description = "Precise, Morph 2(humonoid), distracting, adapation tight spaces, safe fall, slithering, sure footed, swinging, wallcrawling";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 72;
+                damage = 6;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Shapeshifter;
+                use = "use";
+                remove = "";
+                break;
+            #endregion
+            #region Speedster 1300-1399
+            case 1300:
+                name = "Gravity Defying Runner";
+                description = "wallcrawling 2, waterwalking, limit(moving), quickness 10, speed 15";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1301:
+                name = "Rapid Metabolism";
+                description = "Immunity(poison), Regen 5, quickness 11, speed 11";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1302:
+                name = "Time Traveller";
+                description = "Time Travel-any time, precognition 4, int or his check required, quickness 10, speed 10";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1303:
+                name = "Cosmic Speedster";
+                description = "Flight 9, Immunity(cold, heat, radiation, suffocation, vacuum), adaptation zero-g, space travel 1";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1304:
+                name = "HyperSonic";
+                description = "Flight 14";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1305:
+                name = "Hyper Speed";
+                description = "Flight 10, quickness 8";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1306:
+                name = "Dimensional walker";
+                description = "dimension travel - any, teleport 11";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1307:
+                name = "Proximal";
+                description = "teleport 9, acc, turnabout";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1308:
+                name = "Transmit";
+                description = "teleport 9, easy, extended, medium(choose), turnabout";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1309:
+                name = "World-walker";
+                description = "extended, turnabout, teleport 9";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1310:
+                name = "Disruption";
+                description = "Penetrating damage, acc 2";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 9;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1311:
+                name = "Kinetic Theft";
+                description = "Ranged Afflication, res/over will, hinder,immob, para, accurate 2";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 9;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1312:
+                name = "Rapid Attack";
+                description = "Selective Multiattack, accurate 2";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 6;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1313:
+                name = "Rapid fire";
+                description = "Selective ranged multiattack, accurate 4";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 4;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1314:
+                name = "Sonic Boom";
+                description = "Burst Damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1315:
+                name = "Vertigo Attack";
+                description = "Cumulative affication, res/over fort, daze, stun, incapicated";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 9;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1316:
+                name = "Air Control";
+                description = "Cone Move Object 10, Close Range";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1317:
+                name = "Anchor";
+                description = "Simulataneous Nullify Movement 10";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1318:
+                name = "Phase Shift";
+                description = "Insubstantial 4";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1319:
+                name = "Temporal/ dimensional duplicate";
+                description = "Summon 10, active, feedback";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1320:
+                name = "Bullet";
+                description = "Enh dodge 6, Enh parry 6, pro 8, Imprevious";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1321:
+                name = "Hard Target";
+                description = "Enh dodge 11, Enh parry 11, def roll 3, Imp  Iniative 3";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1322:
+                name = "Natural Selection";
+                description = "Enh dodge 10, Enh parry 10, Enh Agi 2, Enh Sta 2";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
+                use = "use";
+                remove = "";
+                break;
+            case 1323:
+                name = "Too fast to follow";
+                description = "Enh dodge 10, Enh parry 10, Imp initative 2, def roll 2, conceal 4, limit(moving)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 28;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Speedster;
                 use = "use";
                 remove = "";
                 break;
             #endregion
             #region Summoner 1400-1499
             case 1400:
-                name = "Mystic awareness";
-                description = "senses 3, mystic awareness, analytical, radius";
+                name = "Summon Twin";
+                description = "Summon 8(PL8, 120 point dup), heroic, Mental Link";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
-                value = 24;
+                value = 33;
                 damage = 0;
                 armour = 0;
                 heal = 0;
                 iconName = "Misc/trans";
                 meshName = "Misc/trans";
-                type = ItemTypes.Mystic;
+                type = ItemTypes.Summoner;
+                use = "use";
+                remove = "";
+                break;
+            case 1401:
+                name = "Summon Triplets";
+                description = "Summon 7(2PL7, 105 point dup), heroic, horde, Mental Link, multiple minions 1";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 33;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Summoner;
+                use = "use";
+                remove = "";
+                break;
+            case 1402:
+                name = "Imaginary Friend";
+                description = "Summon 10(PL10, 120 point dup), heroic, Mental Link";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 51;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Summoner;
+                use = "use";
+                remove = "";
+                break;
+            case 1410:
+                name = "Invisibility";
+                description = "Conceal 10(all senses), Blending";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 10;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Summoner;
+                use = "use";
+                remove = "";
+                break;
+            case 1411:
+                name = "Lucky";
+                description = "Luck control 2(force reroll, negate luck), luck 4";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 10;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Summoner;
+                use = "use";
+                remove = "";
+                break;
+            case 1412:
+                name = "Mimic";
+                description = "Variable 2, Limit(imaginary friend), strandard action, tiring";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 10;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Summoner;
+                use = "use";
+                remove = "";
+                break;
+            case 1413:
+                name = "Shapechange";
+                description = "Morph 2(humanoid)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 10;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Summoner;
+                use = "use";
+                remove = "";
+                break;
+            case 1414:
+                name = "Projection";
+                description = "Create 5";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 10;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Summoner;
+                use = "use";
+                remove = "";
+                break;
+            case 1420:
+                name = "Summon Animals";
+                description = "Summon 4(16Pl4), controlled, horde, mental link, multiple minion 4";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 61;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Summoner;
+                use = "use";
+                remove = "";
+                break;
+            case 1430:
+                name = "Summon Ninjas";
+                description = "Summon 6(8Pl6), controlled, horde, mental link, multiple minion 3";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 10;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Summoner;
+                use = "use";
+                remove = "";
+                break;
+            case 1431:
+                name = "Summon Robots";
+                description = "Summon 6(8Pl6), controlled, horde, mental link, multiple minion 3";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 10;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Summoner;
+                use = "use";
+                remove = "";
+                break;
+            case 1432:
+                name = "Summon Shadows";
+                description = "Summon 6(8Pl6), controlled, horde, mental link, multiple minion 3";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 10;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.Summoner;
                 use = "use";
                 remove = "";
                 break;
             #endregion
             #region Supernatural Creature 1500-1599
             case 1500:
-                name = "Mystic awareness";
-                description = "senses 3, mystic awareness, analytical, radius";
+                name = "Brutish Strength";
+                description = "Enh Str 4";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price
-                value = 24;
+                value = 8;
                 damage = 0;
                 armour = 0;
                 heal = 0;
                 iconName = "Misc/trans";
                 meshName = "Misc/trans";
-                type = ItemTypes.Mystic;
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1501:
+                name = "Devilish Speed";
+                description = "Enh CA 4, Imp init 2, quick 2";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 8;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1502:
+                name = "Supernatural Might";
+                description = "Enh Str 2, powerlift 2, Enh CA 2";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 8;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1503:
+                name = "Demonic Physiology";
+                description = "Pro 3";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 3;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1504:
+                name = "Blood Drain";
+                description = "Regen 10, source(blood)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1505:
+                name = "Thick Skin";
+                description = "Pro 3, imp tough 9, limit(not magic or silver)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 9;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1510:
+                name = "Fire Breath";
+                description = "cone damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1511:
+                name = "Flaming Body";
+                description = "reaction damage";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 5;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1512:
+                name = "Hellfire Blast";
+                description = "Ranged, accurate 4";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 8;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1513:
+                name = "Hypnosis";
+                description = "Perception ranged afflication, res/over will, entrance, compell, control, vis dependent";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1514:
+                name = "Punishing Gaze";
+                description = "Perception ranged afflication, res/over will, daze, stun, incapicate, vis dependent";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 10;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1515:
+                name = "ShapeChange";
+                description = "Morph 4(any form)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 20;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1516:
+                name = "Hellfire form";
+                description = "Insubstantial 3(hellfire)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 15;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1517:
+                name = "Immortal";
+                description = "Immortal 5, regen 5";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 15;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1520:
+                name = "Supernatural Resistance 0";
+                description = "Immunity(cold, heat, pressure, radiation, vacuum)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1521:
+                name = "Supernatural Resistance 1";
+                description = "Immunity(disease, poison, starvation, thrist, suffocation)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1522:
+                name = "Supernatural Resistance 2";
+                description = "Immunity(Alteration effects)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1523:
+                name = "Supernatural Resistance 3";
+                description = "Immunity(Cold damage)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1524:
+                name = "Supernatural Resistance 4";
+                description = "Immunity(Electricity damage)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1525:
+                name = "Supernatural Resistance 5";
+                description = "Immunity(Emotion effects)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1526:
+                name = "Supernatural Resistance 6";
+                description = "Immunity(Fire Damage)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1527:
+                name = "Supernatural Resistance 7";
+                description = "Immunity(Magic Damage)";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1530:
+                name = "Demonic Cape";
+                description = "Flight 6, Gliding, removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1531:
+                name = "Demonic Movement";
+                description = "Leaping 2, speed 3";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1532:
+                name = "Giant Bat Wings";
+                description = "Flight 5, wings";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
+                use = "use";
+                remove = "";
+                break;
+            case 1533:
+                name = "Hellrider";
+                description = "wallcrawling, waterwalking, Limit(movement), speed 6, strandard action, removable";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 5;
+                damage = 0;
+                armour = 0;
+                heal = 0;
+                iconName = "Misc/trans";
+                meshName = "Misc/trans";
+                type = ItemTypes.SupernaturalCreature;
                 use = "use";
                 remove = "";
                 break;

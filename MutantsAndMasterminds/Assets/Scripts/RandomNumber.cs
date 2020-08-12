@@ -30,6 +30,45 @@ public class RandomNumber : MonoBehaviour
         number100 = number0 + number1 + number2 + number3 + number4 + number5 + number6 + number7 + number8 + number9;
         
     }
+    public void RandomX(int number)
+    {
+        number0 = Random.Range(0, number - 1);
+    }
+    public void DoubleRandomX(int number)
+    {
+        RandomX(number);
+        number1 = number0;
+        while (number1 == number0)
+        {
+            RandomX(number - 1);
+        }
+    }
+    public void TripleRandomX(int number)
+    {
+        DoubleRandomX(number);
+        number2 = number1;
+        while (number2 == number1)
+        {
+            DoubleRandomX(number - 1);
+        }
+    }
+    public void QuadRandomX(int number)
+    {
+        TripleRandomX(number);
+        number3 = number2;
+        while (number3 == number2)
+        {
+            TripleRandomX(number - 1);
+        }
+    }
+    public void QuadRandom8()
+    {
+
+    }
+    public void TripleRandom8()
+    {
+
+    }
     public void DoubleRandom3()
     {
         Random3();
@@ -75,6 +114,7 @@ public class RandomNumber : MonoBehaviour
             Random6();
         }
     }
+    
     public void TripleRandom7()
     {
         DoubleRandom7();
@@ -84,6 +124,7 @@ public class RandomNumber : MonoBehaviour
             DoubleRandom7();
         }
     }
+   
     public void Random2()
     {
         number0 = Random.Range(0, 1);

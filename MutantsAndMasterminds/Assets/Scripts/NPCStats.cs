@@ -19,8 +19,8 @@ public class NPCStats : MonoBehaviour
     private string string1, string0, string2, string3, string4, string5;
     private string[] adv0, adv1, adv2, adv3;
     private string Adv0, Adv1, Adv2, Adv3;
-    
-
+    public static List<Item> inv = new List<Item>();
+    public LinearInventory powers;
     public GameObject self;
     private string[] names = new string[] { "Albert", "Bogdan", "Dmitry", "Eduard", "Fedir", "German", "Igor", "Julij", "Konstantin", "Lavrentii", "Maxim", "Naum", "Osip", "Peter", "Roman", "Tit", "Vlad", "Yuri", "Vyacheslav", "Goga", "Alexei", "Viktor", "Misha", "Innokentiy", "Stefan", "Stanislav", "Foma", "Ruslan", "Taras", "Mitrofan", "Erik", "Spartak", "Modest", "Garry", "Nikita", "Boris", "Dobrushin", "Trofim", "Anton", "Mikhail", "Abram", "Gedeon", "Dorofey", "Savin", "Isodor", "Leonid", "Gleb", "Valentin", "David", "Daniil", "Ippolit", "Kirill", "Lazar", "Filipp", "Marlen", "Nestor", "Robert", "Arkady", "Pasha", "Valeriy", "Rolan", "Makariy", "Yulian", "Gennady", "Sergei", "Fanasiy", "Khan", "Semyon", "Yakov", "Rurik", "Faddei", "Yefim", "Nikolay", "Sasha", "Vladimir", "Alexander", "Stas", "Ipatiy", "Kolmogorov", "Vitaliy", "Vladislav", "Artyom", "Yana", "Olga", "Fedor", "Vasily", "Ivanovich", "Leo", "Pierre", "Anna", "Natasha", "Andrei" };
     private string[] archetypes = new string[] { "Battlesuit", "Construct", "Crime Fighter", "Elemental", "Energy Controller", "Gadgeteer", "Martial Artist", "Mimic", "Mystic", "Paragon", "Powerhouse", "Psychic", "Shapeshifter", "Speedster", "Summoner", "Supernatural Creature", "Totem", "Warrior", "Weapon Master", "Weather Controller" };
@@ -368,6 +368,185 @@ public class NPCStats : MonoBehaviour
                     persuasion += 4;
                     technology += 4;
                 }
+                #region powers
+                string4 = "Weapon Array";
+                inv.Add(ItemData.CreateItem(100));
+                random.QuadRandomX(8);
+                if (random.number0 == 0)
+                {
+                    inv.Add(ItemData.CreateItem(101));
+                }
+                else if (random.number0 == 1)
+                {
+                    inv.Add(ItemData.CreateItem(102));
+                }
+                else if (random.number0 == 2)
+                {
+                    inv.Add(ItemData.CreateItem(103));
+                }
+                else if (random.number0 == 4)
+                {
+                    inv.Add(ItemData.CreateItem(104));
+                }
+                else if (random.number0 == 5)
+                {
+                    inv.Add(ItemData.CreateItem(105));
+                }
+                else if (random.number0 == 6)
+                {
+                    inv.Add(ItemData.CreateItem(106));
+                }
+                else if (random.number0 == 7)
+                {
+                    inv.Add(ItemData.CreateItem(107));
+                }
+                else
+                {
+                    inv.Add(ItemData.CreateItem(108));
+                }
+                if (random.number1 == 0)
+                {
+                    inv.Add(ItemData.CreateItem(101));
+                }
+                else if (random.number1 == 1)
+                {
+                    inv.Add(ItemData.CreateItem(102));
+                }
+                else if (random.number1 == 2)
+                {
+                    inv.Add(ItemData.CreateItem(103));
+                }
+                else if (random.number1 == 4)
+                {
+                    inv.Add(ItemData.CreateItem(104));
+                }
+                else if (random.number1 == 5)
+                {
+                    inv.Add(ItemData.CreateItem(105));
+                }
+                else if (random.number1 == 6)
+                {
+                    inv.Add(ItemData.CreateItem(106));
+                }
+                else if (random.number1 == 7)
+                {
+                    inv.Add(ItemData.CreateItem(107));
+                }
+                else
+                {
+                    inv.Add(ItemData.CreateItem(108));
+                }
+                if (random.number2 == 0)
+                {
+                    inv.Add(ItemData.CreateItem(101));
+                }
+                else if (random.number2 == 1)
+                {
+                    inv.Add(ItemData.CreateItem(102));
+                }
+                else if (random.number2 == 2)
+                {
+                    inv.Add(ItemData.CreateItem(103));
+                }
+                else if (random.number2 == 4)
+                {
+                    inv.Add(ItemData.CreateItem(104));
+                }
+                else if (random.number2 == 5)
+                {
+                    inv.Add(ItemData.CreateItem(105));
+                }
+                else if (random.number2 == 6)
+                {
+                    inv.Add(ItemData.CreateItem(106));
+                }
+                else if (random.number2 == 7)
+                {
+                    inv.Add(ItemData.CreateItem(107));
+                }
+                else
+                {
+                    inv.Add(ItemData.CreateItem(108));
+                }
+                if (random.number3 == 0)
+                {
+                    inv.Add(ItemData.CreateItem(101));
+                }
+                else if (random.number3 == 1)
+                {
+                    inv.Add(ItemData.CreateItem(102));
+                }
+                else if (random.number3 == 2)
+                {
+                    inv.Add(ItemData.CreateItem(103));
+                }
+                else if (random.number3 == 4)
+                {
+                    inv.Add(ItemData.CreateItem(104));
+                }
+                else if (random.number3 == 5)
+                {
+                    inv.Add(ItemData.CreateItem(105));
+                }
+                else if (random.number3 == 6)
+                {
+                    inv.Add(ItemData.CreateItem(106));
+                }
+                else if (random.number3 == 7)
+                {
+                    inv.Add(ItemData.CreateItem(107));
+                }
+                else
+                {
+                    inv.Add(ItemData.CreateItem(108));
+                }
+                inv.Add(ItemData.CreateItem(110));
+                inv.Add(ItemData.CreateItem(111));
+                inv.Add(ItemData.CreateItem(112));
+                random.RandomX(4);
+                if (random.number0 == 0)
+                {
+                    inv.Add(ItemData.CreateItem(120));
+                    inv.Add(ItemData.CreateItem(121));
+                }
+                
+                else if (random.number0 == 1)
+                {
+                    random.RandomX(4);
+                    if (random.number0 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(120));
+                        
+                    }
+
+                    else if (random.number0 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(121));
+
+                    }
+                    else if (random.number0 == 2)
+                    {
+                        inv.Add(ItemData.CreateItem(122));
+                        
+                    }
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(123));
+                    }
+
+                }
+                else if (random.number0 == 2)
+                {
+                    inv.Add(ItemData.CreateItem(126));
+                    inv.Add(ItemData.CreateItem(127));
+                }
+                else
+                {
+                    inv.Add(ItemData.CreateItem(128));
+                }
+                inv.Add(ItemData.CreateItem(130));
+                inv.Add(ItemData.CreateItem(131));
+                #endregion
                 background0.text = string0 + ", " + string1 + ", " + string2;
                 Dodge += Agility + 4;
                 Parry += Fighting + 2;

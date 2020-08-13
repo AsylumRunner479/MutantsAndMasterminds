@@ -142,7 +142,7 @@ public static class ItemData
                 remove = "strip";
                 break;
             case 11:
-                name = "Retractable Claws and Combat Computer";
+                name = "Retractable Claws";
                 description = "strength based, penetrating 6, enh closeattack 4";
                 //Amount of items of that type...Stackable
                 amount = 1;
@@ -931,7 +931,7 @@ public static class ItemData
                 remove = "";
                 break;
             case 221:
-                name = "Gimmick Gadgets 0";
+                name = "Gimmick Gadgets 1";
                 description = "ranged cloud area afflication, resisted and overcome by fortitude; dazed, stunned, incapacitated, easily removable";
                 //Amount of items of that type...Stackable
                 amount = 1;
@@ -947,7 +947,7 @@ public static class ItemData
                 remove = "";
                 break;
             case 222:
-                name = "Gimmick Gadgets 1";
+                name = "Gimmick Gadgets 2";
                 description = "Safe fall, Swinging, easily removable";
                 //Amount of items of that type...Stackable
                 amount = 1;
@@ -1384,6 +1384,22 @@ public static class ItemData
             case 335:
                 name = "Wind Screen";
                 description = "deflect 12, Cylinder area(2), limited to dodge attacks";
+                //Amount of items of that type...Stackable
+                amount = 1;
+                //Buy and Sell Price
+                value = 24;
+                damage = 12;
+                armour = 0;
+                heal = 2;
+                iconName = "Food/Apple";
+                meshName = "Food/Apple";
+                type = ItemTypes.Elemental;
+                use = "eat";
+                remove = "";
+                break;
+            case 336:
+                name = "Suffocation";
+                description = "Pro range afflict, res/over fort, daze, stun, incap";
                 //Amount of items of that type...Stackable
                 amount = 1;
                 //Buy and Sell Price

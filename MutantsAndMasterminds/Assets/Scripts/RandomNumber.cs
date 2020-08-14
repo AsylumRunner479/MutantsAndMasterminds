@@ -61,6 +61,15 @@ public class RandomNumber : MonoBehaviour
             TripleRandomX(number - 1);
         }
     }
+    public void QuinRandomX(int number)
+    {
+        QuadRandomX(number);
+        number4 = number3;
+        while (number4 == number3)
+        {
+            QuadRandomX(number - 1);
+        }
+    }
     public void QuadRandom8()
     {
 

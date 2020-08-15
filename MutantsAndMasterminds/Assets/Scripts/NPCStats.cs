@@ -5360,41 +5360,327 @@ public class NPCStats : MonoBehaviour
                     perception += 4;
                 }
                 #region powers
-                string4 = "Weapon Array";
-                inv.Add(ItemData.CreateItem(100));
+                
                 random.RandomX(3);
-                random.RandomX(8);
+                
                 if (random.number0 == 0)
                 {
-                    inv.Add(ItemData.CreateItem(101));
+                    //psionic
+                    inv.Add(ItemData.CreateItem(1100));
+                    random.TripleRandomX(6);
+
+                    if (random.number0 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(1101));
+                    }
+                    else if (random.number0 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(1102));
+                    }
+                    else if (random.number0 == 2)
+                    {
+                        inv.Add(ItemData.CreateItem(1103));
+                    }
+                    else if (random.number0 == 3)
+                    {
+                        inv.Add(ItemData.CreateItem(1104));
+                    }
+                    else if (random.number0 == 4)
+                    {
+                        inv.Add(ItemData.CreateItem(1105));
+                    }
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(1106));
+                    }
+                    if (random.number1 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(1101));
+                    }
+                    else if (random.number1 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(1102));
+                    }
+                    else if (random.number1 == 2)
+                    {
+                        inv.Add(ItemData.CreateItem(1103));
+                    }
+                    else if (random.number1 == 3)
+                    {
+                        inv.Add(ItemData.CreateItem(1104));
+                    }
+                    else if (random.number1 == 4)
+                    {
+                        inv.Add(ItemData.CreateItem(1105));
+                    }
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(1106));
+                    }
+                    if (random.number2 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(1101));
+                    }
+                    else if (random.number2 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(1102));
+                    }
+                    else if (random.number2 == 2)
+                    {
+                        inv.Add(ItemData.CreateItem(1103));
+                    }
+                    else if (random.number2 == 3)
+                    {
+                        inv.Add(ItemData.CreateItem(1104));
+                    }
+                    else if (random.number2 == 4)
+                    {
+                        inv.Add(ItemData.CreateItem(1105));
+                    }
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(1106));
+                    }
                 }
                 else if (random.number0 == 1)
                 {
-                    inv.Add(ItemData.CreateItem(102));
+                    //mentalist
+                    inv.Add(ItemData.CreateItem(1110));
+                    random.TripleRandomX(7);
+
+                    if (random.number0 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(1111));
+                    }
+                    else if (random.number0 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(1112));
+                    }
+                    else if (random.number0 == 2)
+                    {
+                        inv.Add(ItemData.CreateItem(1113));
+                    }
+                    else if (random.number0 == 3)
+                    {
+                        inv.Add(ItemData.CreateItem(1114));
+                    }
+                    else if (random.number0 == 4)
+                    {
+                        inv.Add(ItemData.CreateItem(1115));
+                    }
+                    else if (random.number0 == 5)
+                    {
+                        inv.Add(ItemData.CreateItem(1116));
+                    }
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(1117));
+                    }
+                    if (random.number1 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(1111));
+                    }
+                    else if (random.number1 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(1112));
+                    }
+                    else if (random.number1 == 2)
+                    {
+                        inv.Add(ItemData.CreateItem(1113));
+                    }
+                    else if (random.number1 == 3)
+                    {
+                        inv.Add(ItemData.CreateItem(1114));
+                    }
+                    else if (random.number1 == 4)
+                    {
+                        inv.Add(ItemData.CreateItem(1115));
+                    }
+                    else if (random.number1 == 5)
+                    {
+                        inv.Add(ItemData.CreateItem(1116));
+                    }
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(1117));
+                    }
+                    if (random.number2 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(1111));
+                    }
+                    else if (random.number2 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(1112));
+                    }
+                    else if (random.number2 == 2)
+                    {
+                        inv.Add(ItemData.CreateItem(1113));
+                    }
+                    else if (random.number2 == 3)
+                    {
+                        inv.Add(ItemData.CreateItem(1114));
+                    }
+                    else if (random.number2 == 4)
+                    {
+                        inv.Add(ItemData.CreateItem(1115));
+                    }
+                    else if (random.number2 == 5)
+                    {
+                        inv.Add(ItemData.CreateItem(1116));
+                    }
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(1117));
+                    }
+                }
+               
+                else
+                {
+                    //Telekinetic
+                    inv.Add(ItemData.CreateItem(1120));
+                    random.TripleRandomX(7);
+
+                    if (random.number0 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(1121));
+                    }
+                    else if (random.number0 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(1122));
+                    }
+                    else if (random.number0 == 2)
+                    {
+                        inv.Add(ItemData.CreateItem(1123));
+                    }
+                    else if (random.number0 == 3)
+                    {
+                        inv.Add(ItemData.CreateItem(1124));
+                    }
+                    else if (random.number0 == 4)
+                    {
+                        inv.Add(ItemData.CreateItem(1125));
+                    }
+                    else if (random.number0 == 5)
+                    {
+                        inv.Add(ItemData.CreateItem(1126));
+                    }
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(1127));
+                    }
+                    if (random.number1 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(1121));
+                    }
+                    else if (random.number1 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(1122));
+                    }
+                    else if (random.number1 == 2)
+                    {
+                        inv.Add(ItemData.CreateItem(1123));
+                    }
+                    else if (random.number1 == 3)
+                    {
+                        inv.Add(ItemData.CreateItem(1124));
+                    }
+                    else if (random.number1 == 4)
+                    {
+                        inv.Add(ItemData.CreateItem(1125));
+                    }
+                    else if (random.number1 == 5)
+                    {
+                        inv.Add(ItemData.CreateItem(1126));
+                    }
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(1127));
+                    }
+                    if (random.number2 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(1121));
+                    }
+                    else if (random.number2 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(1122));
+                    }
+                    else if (random.number2 == 2)
+                    {
+                        inv.Add(ItemData.CreateItem(1123));
+                    }
+                    else if (random.number2 == 3)
+                    {
+                        inv.Add(ItemData.CreateItem(1124));
+                    }
+                    else if (random.number2 == 4)
+                    {
+                        inv.Add(ItemData.CreateItem(1125));
+                    }
+                    else if (random.number2 == 5)
+                    {
+                        inv.Add(ItemData.CreateItem(1126));
+                    }
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(1127));
+                    }
+                }
+                random.RandomX(4);
+                if (random.number0 == 0)
+                {
+                    inv.Add(ItemData.CreateItem(1130));
+                    inv.Add(ItemData.CreateItem(1131));
+                    inv.Add(ItemData.CreateItem(1132));
+                }
+                else if (random.number0 == 1)
+                {
+                    inv.Add(ItemData.CreateItem(1133));
                 }
                 else if (random.number0 == 2)
                 {
-                    inv.Add(ItemData.CreateItem(103));
-                }
-                else if (random.number0 == 4)
-                {
-                    inv.Add(ItemData.CreateItem(104));
-                }
-                else if (random.number0 == 5)
-                {
-                    inv.Add(ItemData.CreateItem(105));
-                }
-                else if (random.number0 == 6)
-                {
-                    inv.Add(ItemData.CreateItem(106));
-                }
-                else if (random.number0 == 7)
-                {
-                    inv.Add(ItemData.CreateItem(107));
+                    inv.Add(ItemData.CreateItem(1134));
                 }
                 else
                 {
-                    inv.Add(ItemData.CreateItem(108));
+                    inv.Add(ItemData.CreateItem(1135));
+                }
+                random.RandomX(9);
+                if (random.number0 == 0)
+                {
+                    inv.Add(ItemData.CreateItem(1140));
+                    
+                }
+                else if (random.number0 == 1)
+                {
+                    inv.Add(ItemData.CreateItem(1141));
+                }
+                else if (random.number0 == 2)
+                {
+                    inv.Add(ItemData.CreateItem(1142));
+                }
+                else if (random.number0 == 3)
+                {
+                    inv.Add(ItemData.CreateItem(1143));
+                }
+                else if (random.number0 == 4)
+                {
+                    inv.Add(ItemData.CreateItem(1144));
+                }
+                else if (random.number0 == 5)
+                {
+                    inv.Add(ItemData.CreateItem(1145));
+                }
+                else if (random.number0 == 6)
+                {
+                    inv.Add(ItemData.CreateItem(1146));
+                }
+                else if (random.number0 == 7)
+                {
+                    inv.Add(ItemData.CreateItem(1147));
+                }
+                else
+                {
+                    inv.Add(ItemData.CreateItem(1148));
                 }
                 #endregion
                 background0.text = string0 + ", " + string1 + ", " + string2;
@@ -5420,8 +5706,7 @@ public class NPCStats : MonoBehaviour
                     Intellect = 2;
                     Presence = 2;
                 }
-
-                else
+                 else
                 {
                     Strength = 2;
                     Agility = 2;
@@ -5533,41 +5818,76 @@ public class NPCStats : MonoBehaviour
                     technology += 6;
                 }
                 #region powers
-                string4 = "Weapon Array";
-                inv.Add(ItemData.CreateItem(100));
-                random.RandomX(3);
-                random.RandomX(8);
+                random.RandomX(5);
                 if (random.number0 == 0)
                 {
-                    inv.Add(ItemData.CreateItem(101));
+                    //shapeshifter
+                    inv.Add(ItemData.CreateItem(1200));
                 }
                 else if (random.number0 == 1)
                 {
-                    inv.Add(ItemData.CreateItem(102));
+                    //size-changer
+                    
+                    random.RandomX(2);
+                    if (random.number0 == 0)
+                    {
+                        //giant
+                        inv.Add(ItemData.CreateItem(1211));
+                        inv.Add(ItemData.CreateItem(1212));
+                        inv.Add(ItemData.CreateItem(1213));
+                        inv.Add(ItemData.CreateItem(1214));
+                    }
+                    
+                    else
+                    {
+                        //shrinking
+                        inv.Add(ItemData.CreateItem(1220));
+                        inv.Add(ItemData.CreateItem(1221));
+                        inv.Add(ItemData.CreateItem(1222));
+                        inv.Add(ItemData.CreateItem(1223));
+                    }
                 }
                 else if (random.number0 == 2)
                 {
-                    inv.Add(ItemData.CreateItem(103));
+                    //density changer
+                    
+                    random.RandomX(5);
+                    if (random.number0 == 0)
+                    {
+                        //increase
+                        inv.Add(ItemData.CreateItem(1230));
+                        inv.Add(ItemData.CreateItem(1231));
+                        inv.Add(ItemData.CreateItem(1232));
+                        inv.Add(ItemData.CreateItem(1233));
+                        inv.Add(ItemData.CreateItem(1234));
+                        inv.Add(ItemData.CreateItem(1235));
+                        inv.Add(ItemData.CreateItem(1236));
+                    }
+                  
+                    else
+                    {
+                        //decrease
+                        inv.Add(ItemData.CreateItem(1240));
+                        inv.Add(ItemData.CreateItem(1241));
+                        inv.Add(ItemData.CreateItem(1242));
+                        inv.Add(ItemData.CreateItem(1243));
+                        inv.Add(ItemData.CreateItem(1244));
+                        inv.Add(ItemData.CreateItem(1245));
+                        inv.Add(ItemData.CreateItem(1246));
+                    }
                 }
                 else if (random.number0 == 4)
                 {
-                    inv.Add(ItemData.CreateItem(104));
+                    //specific shapeshifter
+                    inv.Add(ItemData.CreateItem(1201));
                 }
-                else if (random.number0 == 5)
-                {
-                    inv.Add(ItemData.CreateItem(105));
-                }
-                else if (random.number0 == 6)
-                {
-                    inv.Add(ItemData.CreateItem(106));
-                }
-                else if (random.number0 == 7)
-                {
-                    inv.Add(ItemData.CreateItem(107));
-                }
+               
                 else
                 {
-                    inv.Add(ItemData.CreateItem(108));
+                    //stretcher
+                    inv.Add(ItemData.CreateItem(1250));
+                    inv.Add(ItemData.CreateItem(1251));
+                    inv.Add(ItemData.CreateItem(1252));
                 }
                 #endregion
                 background0.text = string0 + ", " + string1 + ", " + string2;
@@ -5710,41 +6030,149 @@ public class NPCStats : MonoBehaviour
                     technology += 6;
                 }
                 #region powers
-                string4 = "Weapon Array";
-                inv.Add(ItemData.CreateItem(100));
+
+
                 random.RandomX(3);
-                random.RandomX(8);
+                
                 if (random.number0 == 0)
                 {
-                    inv.Add(ItemData.CreateItem(101));
+                    random.RandomX(3);
+                    if (random.number0 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(1300));
+                    }
+                    else if (random.number0 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(1301));
+                    }
+                    
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(1302));
+                    }
                 }
                 else if (random.number0 == 1)
                 {
-                    inv.Add(ItemData.CreateItem(102));
+                    random.RandomX(3);
+                    if (random.number0 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(1303));
+                    }
+                    else if (random.number0 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(1304));
+                    }
+
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(1305));
+                    }
+                }
+                
+                else
+                {
+                    random.RandomX(4);
+                    if (random.number0 == 0)
+                    {
+                        inv.Add(ItemData.CreateItem(1306));
+                    }
+                    else if (random.number0 == 1)
+                    {
+                        inv.Add(ItemData.CreateItem(1307));
+                    }
+                    else if (random.number0 == 2)
+                    {
+                        inv.Add(ItemData.CreateItem(1308));
+                    }
+                    else
+                    {
+                        inv.Add(ItemData.CreateItem(1309));
+                    }
+                }
+                random.DoubleRandomX(6);
+                if (random.number0 == 0)
+                {
+                    inv.Add(ItemData.CreateItem(1310));
+                }
+                else if (random.number0 == 1)
+                {
+                    inv.Add(ItemData.CreateItem(1311));
                 }
                 else if (random.number0 == 2)
                 {
-                    inv.Add(ItemData.CreateItem(103));
+                    inv.Add(ItemData.CreateItem(1312));
                 }
-                else if (random.number0 == 4)
+                else if (random.number0 == 3)
                 {
-                    inv.Add(ItemData.CreateItem(104));
+                    inv.Add(ItemData.CreateItem(1313));
                 }
-                else if (random.number0 == 5)
+                else if (random.number0 == 3)
                 {
-                    inv.Add(ItemData.CreateItem(105));
-                }
-                else if (random.number0 == 6)
-                {
-                    inv.Add(ItemData.CreateItem(106));
-                }
-                else if (random.number0 == 7)
-                {
-                    inv.Add(ItemData.CreateItem(107));
+                    inv.Add(ItemData.CreateItem(1314));
                 }
                 else
                 {
-                    inv.Add(ItemData.CreateItem(108));
+                    inv.Add(ItemData.CreateItem(1315));
+                }
+                if (random.number1 == 0)
+                {
+                    inv.Add(ItemData.CreateItem(1310));
+                }
+                else if (random.number1 == 1)
+                {
+                    inv.Add(ItemData.CreateItem(1311));
+                }
+                else if (random.number1 == 2)
+                {
+                    inv.Add(ItemData.CreateItem(1312));
+                }
+                else if (random.number1 == 3)
+                {
+                    inv.Add(ItemData.CreateItem(1313));
+                }
+                else if (random.number1 == 3)
+                {
+                    inv.Add(ItemData.CreateItem(1314));
+                }
+                else
+                {
+                    inv.Add(ItemData.CreateItem(1315));
+                }
+                random.RandomX(4);
+                if (random.number0 == 0)
+                {
+                    inv.Add(ItemData.CreateItem(1316));
+                }
+                else if (random.number0 == 1)
+                {
+                    inv.Add(ItemData.CreateItem(1317));
+                }
+                else if (random.number0 == 2)
+                {
+                    inv.Add(ItemData.CreateItem(1318));
+                }
+               
+                else
+                {
+                    inv.Add(ItemData.CreateItem(1319));
+                }
+                random.RandomX(4);
+                if (random.number0 == 0)
+                {
+                    inv.Add(ItemData.CreateItem(1320));
+                }
+                else if (random.number0 == 1)
+                {
+                    inv.Add(ItemData.CreateItem(1321));
+                }
+                else if (random.number0 == 2)
+                {
+                    inv.Add(ItemData.CreateItem(1322));
+                }
+
+                else
+                {
+                    inv.Add(ItemData.CreateItem(1323));
                 }
                 #endregion
                 background0.text = string0 + ", " + string1 + ", " + string2;
@@ -5811,9 +6239,7 @@ public class NPCStats : MonoBehaviour
                         technology += 6;
                     }
                     #region powers
-                    string4 = "Weapon Array";
-                    inv.Add(ItemData.CreateItem(100));
-                    random.RandomX(3);
+                    
                     random.RandomX(8);
                     if (random.number0 == 0)
                     {

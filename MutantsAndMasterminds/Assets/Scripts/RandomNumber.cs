@@ -40,7 +40,7 @@ public class RandomNumber : MonoBehaviour
         number1 = number0;
         while (number1 == number0)
         {
-            RandomX(number - 1);
+            RandomX(number);
         }
     }
     public void TripleRandomX(int number)
@@ -49,7 +49,7 @@ public class RandomNumber : MonoBehaviour
         number2 = number1;
         while (number2 == number1)
         {
-            DoubleRandomX(number - 1);
+            DoubleRandomX(number);
         }
     }
     public void QuadRandomX(int number)
@@ -58,7 +58,7 @@ public class RandomNumber : MonoBehaviour
         number3 = number2;
         while (number3 == number2)
         {
-            TripleRandomX(number - 1);
+            TripleRandomX(number);
         }
     }
     public void QuinRandomX(int number)
@@ -67,7 +67,7 @@ public class RandomNumber : MonoBehaviour
         number4 = number3;
         while (number4 == number3)
         {
-            QuadRandomX(number - 1);
+            QuadRandomX(number);
         }
     }
     public void QuadRandom8()

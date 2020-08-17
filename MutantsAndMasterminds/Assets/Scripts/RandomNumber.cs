@@ -15,7 +15,8 @@ public class RandomNumber : MonoBehaviour
     public int number8;
     public int number9;
     public int number100;
-    public void Random10()
+    public int[] Stats;
+    public void Random10(int mode, int min, int max, bool round)
     {
         number0 = Random.Range(0, 10);
         number1 = Random.Range(0, 10);
@@ -27,8 +28,25 @@ public class RandomNumber : MonoBehaviour
         number7 = Random.Range(0, 10);
         number8 = Random.Range(0, 10);
         number9 = Random.Range(0, 10);
-        number100 = number0 + number1 + number2 + number3 + number4 + number5 + number6 + number7 + number8 + number9;
-        
+        number100 = number0 + number1 + number2 + number3 + number4 + number5 + number6 + number7 + number8 + number9 - 50 + mode;
+        if (number100 >= max)
+        {
+            number100 = max;
+        }
+        if (number100 <= min)
+        {
+            number100 = min;
+        }
+        if (round)
+        {
+            number100 = Mathf.RoundToInt(number100 / 10);
+        }
+    }
+    public void Start()
+    {
+        //sets the first stat between 0 and 100 with 50 being the average and not rounded
+        Random10(50, 0, 100, false);
+        Stats[0] = number100;
     }
     public void RandomX(int number)
     {
@@ -185,7 +203,7 @@ public class RandomNumber : MonoBehaviour
         for (int i = 0; i < 10; i++)
         {
             number0 = 0;
-            Random10();
+            //Random10();
             number1 += number0;
             
         }

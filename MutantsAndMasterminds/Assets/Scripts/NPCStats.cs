@@ -14,13 +14,15 @@ public class NPCStats : MonoBehaviour
     public string[] Archetype, displayArchetype;
     public string[] SubArchetype, displaySubArchetype;
     public Text Background, displayBackground, displayBackground2;
-    public GameObject StatDisplay, NameList;
+    public GameObject StatDisplay, NameList, powerList;
     public Text advantage0, advantage1, advantage2, advantage3;
     private string string1, string0, string2, string3, string4, string5;
     private string[] adv0, adv1, adv2, adv3;
     private string Adv0, Adv1, Adv2, Adv3;
     public static List<Item> inv = new List<Item>();
     public LinearInventory powers;
+    public Text[] slots;
+    public int[] powerID;
     public GameObject self;
     private string[] names = new string[] { "Albert", "Bogdan", "Dmitry", "Eduard", "Fedir", "German", "Igor", "Julij", "Konstantin", "Lavrentii", "Maxim", "Naum", "Osip", "Peter", "Roman", "Tit", "Vlad", "Yuri", "Vyacheslav", "Goga", "Alexei", "Viktor", "Misha", "Innokentiy", "Stefan", "Stanislav", "Foma", "Ruslan", "Taras", "Mitrofan", "Erik", "Spartak", "Modest", "Garry", "Nikita", "Boris", "Dobrushin", "Trofim", "Anton", "Mikhail", "Abram", "Gedeon", "Dorofey", "Savin", "Isodor", "Leonid", "Gleb", "Valentin", "David", "Daniil", "Ippolit", "Kirill", "Lazar", "Filipp", "Marlen", "Nestor", "Robert", "Arkady", "Pasha", "Valeriy", "Rolan", "Makariy", "Yulian", "Gennady", "Sergei", "Fanasiy", "Khan", "Semyon", "Yakov", "Rurik", "Faddei", "Yefim", "Nikolay", "Sasha", "Vladimir", "Alexander", "Stas", "Ipatiy", "Kolmogorov", "Vitaliy", "Vladislav", "Artyom", "Yana", "Olga", "Fedor", "Vasily", "Ivanovich", "Leo", "Pierre", "Anna", "Natasha", "Andrei" };
     private string[] archetypes = new string[] { "Battlesuit", "Construct", "Crime Fighter", "Elemental", "Energy Controller", "Gadgeteer", "Martial Artist", "Mimic", "Mystic", "Paragon", "Powerhouse", "Psychic", "Shapeshifter", "Speedster", "Summoner", "Supernatural Creature", "Totem", "Warrior", "Weapon Master", "Weather Controller" };
@@ -28,6 +30,18 @@ public class NPCStats : MonoBehaviour
     private string[] lastNames = new string[] { "Isayev", "Tikhonov", "Chapayev", "Petka", "Anka", "Furmanov", "Budyonny", "Caesar", "Rzhevsky", "Tolstoy", "Bezukhov", "Blonsky", "Romanov", "Pavlovna", "Rostova", "Bolkonsky", "Kuragin", "Vidor", "Bondarchuk", "Levi", "Livinov", "Solomin", "Aksyonov", "Kalashnikov", "Gorbachev", "Smirnov", "Chernov", "Putin", "Brezhnev", "Pushkin", "Lipatov", "Khruschev", "Yeltsin", "Medvedev", "Anatolievych", "Vladimirovich" };
     private int skillCount;
     private GameObject[] skilltags;
+    public DisplayItem display;
+  
+        public struct DisplayItem
+    {
+        public Text itemName;
+        public RawImage itemIcon;
+        public Text itemDescription;
+        public Text itemDamage;
+        public Text UseItem;
+        public Text RemoveItem;
+
+    };
     private int acrobatics = 0,
         athletics = 0,
         closeCombatGadgets = 0,
@@ -101,7 +115,7 @@ public class NPCStats : MonoBehaviour
         Treatment,
         Vehicles;
     public GameObject skillName, skillNum, skillList;
-    
+    public static Item selectedItem;
     private string[] advantages = new string[] { "default" };
     public string GetRandomName()
     {
@@ -8447,8 +8461,9 @@ public class NPCStats : MonoBehaviour
         {
             Adv3 = Adv3 + ", " + adv3[i].ToString();
         }
+        
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -8463,7 +8478,14 @@ public class NPCStats : MonoBehaviour
     {
         if (Display == true)
         {
-            
+            for (int i = 0; i < slots.Length; i++)
+            {
+                if (i < inv.Count)
+                {
+                    slots[i].text = inv[i].Name;
+                    powerID[i] = inv[i].ID;
+                }
+            }
             StatDisplay.SetActive(true);
             NameList.SetActive(false);
             dodge.GetComponent<Text>().text = Dodge.ToString();
@@ -8729,5 +8751,41 @@ public class NPCStats : MonoBehaviour
 
         }
     }
-    
+    public void ShowPowers(bool Display,int ID)
+    {
+
+        if (Display == true)
+        {
+            
+            selectedItem = inv[ID];
+            StatDisplay.SetActive(false);
+            NameList.SetActive(false);
+            powerList.SetActive(true);
+            //how do you show the power ID
+            //then display different aspects of the stats
+            //ITEM DATA IS ALWAYS EMPTY!
+            //shows the details based on the item data
+            display.UseItem.text = selectedItem.UseItem;
+            display.RemoveItem.text = selectedItem.RemoveItem;
+            display.itemName.text = selectedItem.Name;
+            //display.itemIcon.sprite = selectedItem.IconName;
+            display.itemDescription.text = selectedItem.Description + "\nAmount: " + selectedItem.Amount + "\nPrice: $" + selectedItem.Value;
+            display.itemDamage.text = "Damage: " + selectedItem.Damage;
+            display.itemIcon.texture = selectedItem.IconName.texture;
+            display.UseItem.text = "Use";
+
+            Debug.Log("ShowItem");
+
+
+        }
+        if (Display == false)
+        {
+            StatDisplay.SetActive(true);
+            NameList.SetActive(false);
+            powerList.SetActive(false);
+        }
+    }
+
 }
+
+
